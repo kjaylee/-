@@ -1,0 +1,354 @@
+{
+  "schema": "marrow-independent-review-1",
+  "fakeDataOnly": true,
+  "realPeopleValidated": false,
+  "independentSeeds": {
+    "enrollmentSeed": 8111,
+    "calibrationSeed": 9337,
+    "testSeed": 17291
+  },
+  "checks": [
+    {
+      "name": "Both independently trained identities contain both input styles",
+      "pass": true
+    },
+    {
+      "name": "Each class has 16 trials per style and 32 overall",
+      "pass": true
+    },
+    {
+      "name": "FAR and FRR numerators/denominators independently match individual decisions",
+      "pass": true
+    },
+    {
+      "name": "Swap really uses the opposite independently trained profile in both directions",
+      "pass": true
+    },
+    {
+      "name": "Both opposite-profile synthetic swap trials produce no opens",
+      "pass": true
+    },
+    {
+      "name": "Evaluation preserves frozen profile bytes and thresholds",
+      "pass": true
+    },
+    {
+      "name": "Frozen profiles refuse overwrite",
+      "pass": true
+    },
+    {
+      "name": "Source/text/button/key order/clock transformations preserve canonical model identity",
+      "pass": true
+    },
+    {
+      "name": "Identity/style/device metadata is rejected at the event boundary",
+      "pass": true
+    },
+    {
+      "name": "Malformed coordinates, text arrival sources and backwards clocks are rejected",
+      "pass": true
+    },
+    {
+      "name": "Reformatted and clock/source-changed training input cannot enter held-out evaluation",
+      "pass": true
+    },
+    {
+      "name": "Canonical enrollment/calibration reuse is rejected before writing a profile",
+      "pass": true
+    },
+    {
+      "name": "Exact repeated held-out rows cannot inflate the denominator",
+      "pass": true
+    },
+    {
+      "name": "Cosmetically changed repeated held-out recordings cannot inflate the denominator",
+      "pass": true
+    },
+    {
+      "name": "Manifest labels and device-like style names do not change scores or decisions",
+      "pass": true
+    },
+    {
+      "name": "Changed profile bytes fail their frozen checksum",
+      "pass": true
+    },
+    {
+      "name": "A profile threshold at the capped maximum is invalid even with a matching checksum",
+      "pass": true
+    },
+    {
+      "name": "Hand-authored on-screen/software JSONL works through public train, score and test CLI commands",
+      "pass": true
+    },
+    {
+      "name": "Missing trial classes report undefined rates rather than zero FAR",
+      "pass": true
+    },
+    {
+      "name": "Insufficient input abstains and counts in the owner FRR denominator/numerator",
+      "pass": true
+    },
+    {
+      "name": "A source-only fresh copy runs the documented one-command demonstration without dependencies",
+      "pass": true
+    },
+    {
+      "name": "Speed-matched mimic variants stay separate, preserve sources and leave the threshold fixed",
+      "pass": true
+    },
+    {
+      "name": "Reviewed implementation sources were unchanged throughout this check",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Synthetic sessions from intentionally separable invented motor families; no accuracy claim about real people or assistive devices.",
+    "The toy mimic only partly imitates shape/easing. Rejected toy mimics do not establish resistance to copied recordings or learned distributions.",
+    "Independent-seed trials reuse the published generator family and are not independent people. Their metrics are separate from the default demonstration.",
+    "Sparse or absent pointer/text evidence abstains; this is an explicit compatibility limit, not validated device coverage.",
+    "No threshold, feature, generator or scale constants were changed by this reviewer."
+  ],
+  "testedSourceSha256": {
+    "lib/recording.mjs": "6a9cb784e481bfaf98ee9e390174010202b9f2591b63218af4a48e3a6fe8da94",
+    "lib/model.mjs": "5693ec6498430a3476c9530b909ba4018e738f49a9fcf8182bc2e1bba5bcb514",
+    "fake/generate.mjs": "2cf100e32a1bb8249849a7ef27eaf266943f7744d00c9f2da80d5d72ac2de50c",
+    "fake/speed-match.mjs": "ff2fbddc7fe9bdbeaae70b2940d6a02f916f0d4cc4117ae5c9f00d83e93cb5ee",
+    "run.mjs": "7fbfba261ba178935c36c0e969b1c31166b7137a8cf815a6fe60bd893098bff4",
+    "tests.mjs": "177e84cef9b7017e398dee9568f9691bf4ab8925c9d7fe956de779910654f94e"
+  },
+  "independentRun": {
+    "frozenBeforeTest": true,
+    "profileSha256": "9d901a4e1a4c72be08ff372721c4be98681caf4e12f9a662921240547efed287",
+    "otherProfileSha256": "3905c76f1972958f7707de990d6ee5707deef00d5a3d2ad1237340d17d2e029e",
+    "threshold": 0.7288896339603482,
+    "metrics": {
+      "strangerFAR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "ownerFRR": {
+        "numerator": 3,
+        "denominator": 32,
+        "rate": 0.09375,
+        "wilson95": {
+          "low": 0.032401551298366194,
+          "high": 0.24218154728387864
+        }
+      },
+      "tiredOwnerFRR": {
+        "numerator": 1,
+        "denominator": 32,
+        "rate": 0.03125,
+        "wilson95": {
+          "low": 0.005537860164003122,
+          "high": 0.15744263820012558
+        }
+      },
+      "mimicFAR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "abstentions": 0
+    },
+    "byStyle": {
+      "mouse-keyboard": {
+        "strangerFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "ownerFRR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "tiredOwnerFRR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "mimicFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "abstentions": 0
+      },
+      "slow-dictation": {
+        "strangerFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "ownerFRR": {
+          "numerator": 3,
+          "denominator": 16,
+          "rate": 0.1875,
+          "wilson95": {
+            "low": 0.06591599071428142,
+            "high": 0.4300888096197414
+          }
+        },
+        "tiredOwnerFRR": {
+          "numerator": 1,
+          "denominator": 16,
+          "rate": 0.0625,
+          "wilson95": {
+            "low": 0.01111934476464252,
+            "high": 0.28328737570298945
+          }
+        },
+        "mimicFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "abstentions": 0
+      }
+    },
+    "swaps": {
+      "alphaOwnerWithBetaProfile": {
+        "profileSha256": "3905c76f1972958f7707de990d6ee5707deef00d5a3d2ad1237340d17d2e029e",
+        "attempts": 64,
+        "opens": 0,
+        "rejects": 64,
+        "abstains": 0
+      },
+      "betaOwnerWithAlphaProfile": {
+        "profileSha256": "9d901a4e1a4c72be08ff372721c4be98681caf4e12f9a662921240547efed287",
+        "attempts": 64,
+        "opens": 0,
+        "rejects": 64,
+        "abstains": 0
+      }
+    }
+  },
+  "handAuthoredExternalCLI": {
+    "inputSources": [
+      "onscreen",
+      "software"
+    ],
+    "enrollmentRecordings": 6,
+    "calibrationRecordings": 6,
+    "heldOutRecordings": 1,
+    "decision": "reject",
+    "score": 1.0295546641411784,
+    "threshold": 0.8857139740313724,
+    "interpretation": "Checks the arbitrary recording/CLI contract only; it does not assert owner acceptance or human validation."
+  },
+  "freshCopyDefaultRun": {
+    "seeds": {
+      "enrollment": 101,
+      "calibration": 202,
+      "test": 303
+    },
+    "threshold": 0.8520219567041128,
+    "metrics": {
+      "strangerFAR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "ownerFRR": {
+        "numerator": 1,
+        "denominator": 32,
+        "rate": 0.03125,
+        "wilson95": {
+          "low": 0.005537860164003122,
+          "high": 0.15744263820012558
+        }
+      },
+      "tiredOwnerFRR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "mimicFAR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "abstentions": 0
+    },
+    "contractTests": {
+      "passed": 15,
+      "failed": 0,
+      "scope": "Input validation, source/content noninterference, fatigue time invariance, abstention, and (in demo) frozen-profile/held-out content leakage."
+    },
+    "speedMatchedMimic": {
+      "mimicFAR": {
+        "numerator": 0,
+        "denominator": 32,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1071791982550706
+        }
+      },
+      "maxAbsoluteSpeedError": 3.3306690738754696e-16,
+      "notIndependent": true
+    },
+    "swaps": {
+      "alphaOwnerWithBetaProfile": {
+        "attempts": 64,
+        "opens": 0,
+        "rejects": 64,
+        "abstains": 0
+      },
+      "betaOwnerWithAlphaProfile": {
+        "attempts": 64,
+        "opens": 0,
+        "rejects": 64,
+        "abstains": 0
+      }
+    }
+  },
+  "checksPassed": 23,
+  "checksFailed": 0
+}

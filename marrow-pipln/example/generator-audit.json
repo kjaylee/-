@@ -1,0 +1,26 @@
+{
+  "syntheticOnly": true,
+  "enrollmentSeed": 101,
+  "calibrationSeed": 202,
+  "testSeed": 303,
+  "styles": [
+    "mouse-keyboard",
+    "slow-dictation"
+  ],
+  "profileOwners": [
+    "alpha",
+    "beta"
+  ],
+  "mimicTarget": "alpha",
+  "mimicCopies": [
+    "input source/mode",
+    "mean motion duration",
+    "click/idle timing mean",
+    "correction probability"
+  ],
+  "mimicDoesNotCopy": [
+    "full trajectory shape",
+    "within-motion easing"
+  ],
+  "warning": "These invented separable motor families are a software test, not evidence of human authentication performance."
+}

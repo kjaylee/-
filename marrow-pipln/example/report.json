@@ -1,0 +1,5173 @@
+{
+  "syntheticOnly": true,
+  "seeds": {
+    "enrollment": 101,
+    "calibration": 202,
+    "test": 303
+  },
+  "contractTests": {
+    "passed": 15,
+    "failed": 0,
+    "scope": "Input validation, source/content noninterference, fatigue time invariance, abstention, and (in demo) frozen-profile/held-out content leakage."
+  },
+  "schema": "marrow-report-1",
+  "profileSha256": "2cc509ebb408f3af7f63e1f351bbff838dc2c4dc2495b689b42e4f10f9f6175a",
+  "threshold": 0.8520219567041128,
+  "thresholdUnchanged": true,
+  "abstentionPolicy": "Abstain counts as rejection, including in owner/tired FRR.",
+  "metrics": {
+    "strangerFAR": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0,
+      "wilson95": {
+        "low": 0,
+        "high": 0.1071791982550706
+      }
+    },
+    "ownerFRR": {
+      "numerator": 1,
+      "denominator": 32,
+      "rate": 0.03125,
+      "wilson95": {
+        "low": 0.005537860164003122,
+        "high": 0.15744263820012558
+      }
+    },
+    "tiredOwnerFRR": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0,
+      "wilson95": {
+        "low": 0,
+        "high": 0.1071791982550706
+      }
+    },
+    "mimicFAR": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0,
+      "wilson95": {
+        "low": 0,
+        "high": 0.1071791982550706
+      }
+    },
+    "abstentions": 0
+  },
+  "byStyle": {
+    "mouse-keyboard": {
+      "strangerFAR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "ownerFRR": {
+        "numerator": 1,
+        "denominator": 16,
+        "rate": 0.0625,
+        "wilson95": {
+          "low": 0.01111934476464252,
+          "high": 0.28328737570298945
+        }
+      },
+      "tiredOwnerFRR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "mimicFAR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "abstentions": 0
+    },
+    "slow-dictation": {
+      "strangerFAR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "ownerFRR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "tiredOwnerFRR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "mimicFAR": {
+        "numerator": 0,
+        "denominator": 16,
+        "rate": 0,
+        "wilson95": {
+          "low": 0,
+          "high": 0.1936076805344365
+        }
+      },
+      "abstentions": 0
+    }
+  },
+  "rows": [
+    {
+      "path": "test/alpha/mouse-keyboard-owner-0.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "eba5b204656593bf90399457019141c910dea55d09e2e1ff28cac9cb10a3220d",
+      "modelInputSha256": "c20d4956af060d4303187e20cb4729621219f87683c83242893864b37aa98760",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.263843446296418,
+      "quality": {
+        "events": 438,
+        "pointerEvents": 330,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-1.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "6ead0bfbfcb8af08333ec8df1aa742d90e28c0d5e005aec288227763cf96f2c9",
+      "modelInputSha256": "e657daab1fb5be08830e14d5ccd6373d586ad401841b765da0ff790056549435",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 0.8545161159557734,
+      "quality": {
+        "events": 444,
+        "pointerEvents": 334,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-2.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "c361c5cec519e3cbf273cbc4a7120e6c4227e071037cbae3cf1b2616d412f5ae",
+      "modelInputSha256": "c024d129d728fdeebe16992afbf4dc93386dbf4a4a4a54056552dc3fc09f5fec",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5799579599088495,
+      "quality": {
+        "events": 446,
+        "pointerEvents": 328,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-3.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a97e8ec2d92838e362259ffedc51949a841941c802764087711152b6ac21e43b",
+      "modelInputSha256": "898e64ecad0609f2a3abb1916bf627e37e547f5dbe9f85b2c7b24106c13690b9",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4122498196876948,
+      "quality": {
+        "events": 433,
+        "pointerEvents": 307,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-4.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "b0a60c6d8c5362411143da7fea34660bbc00d125263380f10a1d9dc25d095c78",
+      "modelInputSha256": "501a1a10acf9574323ef0415c72894eaf5bb36887eba1d5a40ad2e9cb58b62d8",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.30284923083682386,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 102
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-5.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "6eebe4c67b807b486500a065397c9b431fc158f23c646505ff59a7db50fdee71",
+      "modelInputSha256": "a1e809ee97c493e2c80420f6134d244f62b6ebb994f210d96f7c05c69a3b77a7",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.23916682913337237,
+      "quality": {
+        "events": 446,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-6.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "4db6e84e4ec9f3f334c10b6efbc5b2c4e0ee5905538a08fb708d1f175e0fc0a8",
+      "modelInputSha256": "b1fcc5f30c25a49831f2d7e8e7229e048e86128e573879c3a211ad34debced17",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6063736964944648,
+      "quality": {
+        "events": 457,
+        "pointerEvents": 347,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-7.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a0175e9139bd0b13786954b46a285d0e53e90b1e34a564e8f29f70a5e75b079a",
+      "modelInputSha256": "fe670ceb29ae692fe7c1c9de2fe5abab506e16192ead6b258ee36783b8e46e0f",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.45923618554750323,
+      "quality": {
+        "events": 461,
+        "pointerEvents": 341,
+        "validStrokes": 18,
+        "textEvents": 102
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-8.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "4d72f7eefeb7c4ce1f1db0900fc219c7c0d88e471169ba5f892ab59886880a95",
+      "modelInputSha256": "2bea632d1de4acfd0d79c879432ce3064dfdf19a4a4967eae67b679dcf7ef959",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.30378702504349037,
+      "quality": {
+        "events": 485,
+        "pointerEvents": 367,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-9.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "6d7a53388927e4c830568f8f90021a0ccd54c36524c0f563fd6a5f5afd57fa28",
+      "modelInputSha256": "2ddb8c43753f76b078f6bc144cba86512ca290ac7b052d874c7832d8416666f4",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.35761493483457524,
+      "quality": {
+        "events": 456,
+        "pointerEvents": 350,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-10.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "2ec5bbe2ba9f194ab25a4f371dd78eb0a44d6c69d43e9c465ef171d67648dc5e",
+      "modelInputSha256": "270d32a39a3fefb178dce7836735db556214b50fdb6799752ec4638fa593714b",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3365805213593896,
+      "quality": {
+        "events": 460,
+        "pointerEvents": 336,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-11.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "49c5964cbb9352f8cf2942529372401ccb75993d673d74fcc3197953fa3aec52",
+      "modelInputSha256": "1d3139b9a67db7b62a96eee246b1206258a828f24db2105030ac8910079da0e1",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.740823432794136,
+      "quality": {
+        "events": 449,
+        "pointerEvents": 337,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-12.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a419bd996939603482a5cd87077060aa1d8d5838e56b4c61903f440e3719ec4c",
+      "modelInputSha256": "43cd3277df134997e50bf3340a6dd8c624001a48c3073dfb6f1ca74fc15286a7",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.43513686109436545,
+      "quality": {
+        "events": 418,
+        "pointerEvents": 304,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-13.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "78f3d805d7ac18c7653fec44e688e62f1030e28905c9f060a2cbbd1642d74ea9",
+      "modelInputSha256": "e44d48f80b6a14e5df41bfb26abe43ef09e236670859974a3d41a82a2b39d345",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5035037191624736,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 327,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-14.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "5295dfd5d27503cd568bba430e7c4ea5149c7c1fd6428a3afd7033e22ec5a91d",
+      "modelInputSha256": "b026c2b52570c14beba5ead67ab4a931096da0a78af996d220b005caa0894690",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.38176783298395944,
+      "quality": {
+        "events": 466,
+        "pointerEvents": 354,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-owner-15.jsonl",
+      "label": "owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a3f67d0fa9bd7880fee6be289d82c3514270e0dfceda1d586cfb43fe8641aa62",
+      "modelInputSha256": "90f2fb7fb3f477fcf5e50b46ce4b2678f2f3044364503da9236b44ff184f0fa3",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3087442221765713,
+      "quality": {
+        "events": 460,
+        "pointerEvents": 344,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-0.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "faad49356e87223407ff61b73c2445ee320acedd17fc885dd7603b1ed78958b1",
+      "modelInputSha256": "e2c403f79e8446f8e6dccbe2674b80477a14ff5151c844ff4072cd76570d0fe5",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4872368145231388,
+      "quality": {
+        "events": 473,
+        "pointerEvents": 353,
+        "validStrokes": 18,
+        "textEvents": 102
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-1.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "04286ff870e53ecb163eba2dc4d3d1de83babc1350a1478b23ea56b70e49d637",
+      "modelInputSha256": "b0fa3a98644e0c67837dcc18d3bf8a3632e95645945c6608978dd68f1af1b713",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3673166582114633,
+      "quality": {
+        "events": 456,
+        "pointerEvents": 332,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-2.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "fa52e28e6ce0e7c62090a2f6d25d60c0f4073a13569d3d288bc9d3659e4a26ec",
+      "modelInputSha256": "3f208731163d39a02105ef270d2e91fae54ae0993cc3cd9fb6e6c8993ecc4623",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5281310372774072,
+      "quality": {
+        "events": 448,
+        "pointerEvents": 326,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-3.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "036b63e514f0919c922a8784e20e67c86bd1bc106ca2d3866fd9a34d7a6245db",
+      "modelInputSha256": "d9ee7c90288e2c2bccc3ac208ec80276879dda316a1ce21c2fc993b0e3fa7870",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4955169376195702,
+      "quality": {
+        "events": 424,
+        "pointerEvents": 314,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-4.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "e76184897511e3376d4a677031511dd802a5e22a54a853dd13112d2745f6e67c",
+      "modelInputSha256": "cdd711003fb4e2be4442f1a5f02eaea8e6ae3ed6c8fa14078b1701bc2544663a",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.31748651176188847,
+      "quality": {
+        "events": 436,
+        "pointerEvents": 324,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-5.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "7a9766a60d85b1b7935ccef2c500c347b88aa4a9dfcfd1ee1767d28d6d292a49",
+      "modelInputSha256": "80aa01a04082aadc9118ced9d749b13637d105a1b676744f7149e0597fb2a9de",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.30413041826897297,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 334,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-6.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "ad4cbe0f3e073f3b4e19f97cc3d51cdc37471af545170ad798808d87b3d183c7",
+      "modelInputSha256": "f4d5b8d11cc5683e4628f9ab51666b9c83ef3c46b3dd3e10f43d7b42e5892503",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.28489905580078523,
+      "quality": {
+        "events": 436,
+        "pointerEvents": 316,
+        "validStrokes": 18,
+        "textEvents": 102
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-7.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "4b1001c4290d808ed4da49f920c66677b49ecc7717754a9131e307792bf1ac98",
+      "modelInputSha256": "3cb946ac16b2133f6e297e08b400124023abea287680c8933ac622c1f1ae3e4a",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5857601296177329,
+      "quality": {
+        "events": 458,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 102
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-8.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "c3564f2104413f4da9b41df30ad76a30dcfdd842dbd4cfe0f1016f638dea66c6",
+      "modelInputSha256": "c40bfd20095b048c9f22e7c097203de8c82e29c593a64cc85a71e262417f4e22",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5475215889159415,
+      "quality": {
+        "events": 455,
+        "pointerEvents": 331,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-9.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "4dea8de3ab2539a33f00b3d75f5db9c0ec6777831ab18772ee0ce053db674fdf",
+      "modelInputSha256": "9600f2348d0535737a9167519867c222ff89e6e80e199f85f5f4d9a796d4ee86",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.41455873154429584,
+      "quality": {
+        "events": 436,
+        "pointerEvents": 314,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-10.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "b6121f585a53f0b7e2081c5799f0e6fd664b20e0817e51377eeeb5c410626053",
+      "modelInputSha256": "f472be894ee7001c47dee9c6827e35e6255a218e677a1612e77a92a8dd871d6c",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4581923355145089,
+      "quality": {
+        "events": 479,
+        "pointerEvents": 347,
+        "validStrokes": 18,
+        "textEvents": 114
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-11.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "229930db412ee94b2eaf5ee395937f23ca40b94c3861255e367b8d060b61664e",
+      "modelInputSha256": "c6a9a8542298fd1f2ac19dd27673e7a6264abb80571485b861f05d41a8397c76",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.2514325230483174,
+      "quality": {
+        "events": 481,
+        "pointerEvents": 365,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-12.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "888694f040d0dee9871803a2b383a871882f906a3147578ec6e5ec807c147b6b",
+      "modelInputSha256": "5765877f40cc19af3dc9f3e94563fd62c82d599a18256544ad7bed37cd0574fc",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.42253892885487476,
+      "quality": {
+        "events": 451,
+        "pointerEvents": 325,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-13.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "2ce7b6aea76cebedbe683c6846e7930caacf704b8323f50b62a97c2009f13342",
+      "modelInputSha256": "c800dcf0d31e0831cc97e43218ce53d6d4dfb6dffa5ac8a500bb92f2f586a4af",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5779704998102555,
+      "quality": {
+        "events": 457,
+        "pointerEvents": 329,
+        "validStrokes": 18,
+        "textEvents": 110
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-14.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "d649e0848d252a5fd5891279c0490418d348021004dd7e623dcb7af01e948042",
+      "modelInputSha256": "084d1ccbb3d8435bfb8cf61e8372e344c9149ff82e3b249bed9b741a05362772",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.619613248189182,
+      "quality": {
+        "events": 450,
+        "pointerEvents": 332,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-tired-owner-15.jsonl",
+      "label": "tired-owner",
+      "style": "mouse-keyboard",
+      "recordingSha256": "7f0ed8a0c53e8cb37a5ea046102805fc177b70286231f218e2f422d8ef427ac6",
+      "modelInputSha256": "2dbc7a5635512bd6bfcd286de18eff2b3f0956ab6b846dde8302fc26faf50eca",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.36414554709619606,
+      "quality": {
+        "events": 461,
+        "pointerEvents": 337,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-0.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "97595ef6aae153c488b3ec41068dc844e5fbf02f155d1455919d83dda6039966",
+      "modelInputSha256": "e8924f21df5d08753940b3ace5b4c52e9c5e89d1a26d4c6a1d1eee4c8cfc131d",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.043500515762544,
+      "quality": {
+        "events": 436,
+        "pointerEvents": 332,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-1.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "6bff3767d2e5019e87bef638f2faa3d48dc88903f7c28f8cc692142575641afb",
+      "modelInputSha256": "2a06fee0cf050128b47ec5898bbb7ec84eb7cc0e5e386c86c85d19e114c62fc5",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.0072643526251195,
+      "quality": {
+        "events": 433,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-2.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a6de30e92b29a33ad980e72cde1420fcd83ccbd125e3ca3f1cdb0b5d44789af4",
+      "modelInputSha256": "8a174c35d7088a99ff13ccf1ae413deb66866847ac04e37857f54bbbd50685a8",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.970245954561903,
+      "quality": {
+        "events": 413,
+        "pointerEvents": 313,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-3.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "d84e175ca3aa19d34a00dce7fa5fd0231cb3c4392fa30cb4c48c5fbc95028643",
+      "modelInputSha256": "b39755d079ab3a0df3c41460d59d07ecd8d8c6231004e7c68faa1522edf15e83",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.036077102128294,
+      "quality": {
+        "events": 450,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-4.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "83ad66d351a97757b0fb55709b4c44e19d8df2abe72b195b32d4a4b373d8d969",
+      "modelInputSha256": "f6016e8e16865fdc1134d020e8c18fe0f548ae9bc47ed58d0e0f885e827792e6",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.053014500906146,
+      "quality": {
+        "events": 451,
+        "pointerEvents": 347,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-5.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "59488abd00e6883b7d67b6ad8e42f35220018bb7919a32a2d673cc7c279cffdb",
+      "modelInputSha256": "3678d9b4ada28e96190559360928a5fcd20560f9387bdbac39ed7fa3bbe43d0b",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.9875359245285695,
+      "quality": {
+        "events": 443,
+        "pointerEvents": 339,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-6.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "6a44bc19e957e3affb41a5fb6dfd83cefd266f4c679563dd4f739b0121efbc4d",
+      "modelInputSha256": "d4aae27af1ba16424ba2e5cb5a331ef3f7a50aff737ec3a7bf74577803ac9870",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.033589939241503,
+      "quality": {
+        "events": 422,
+        "pointerEvents": 316,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-7.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "dbbf66c835ee6e0a67ac07e95ad35e9ad7a2e2388a35817f56bd52f3eb540fce",
+      "modelInputSha256": "542ae96c09895fcb5a18711fb0ad2b7bc3577435b3bc1c2ffbbcd60cb22126c5",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.974581627335727,
+      "quality": {
+        "events": 434,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 78
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-8.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "5dcaa03e3ad17b1dc7a09bd2122fe21e82dfc365e00ba274f2ebd1a68437dcc9",
+      "modelInputSha256": "cc91f269067eafdba28abe7278f6edf6b011d114b5e14789396cb5b3be1221c6",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.004326743079763,
+      "quality": {
+        "events": 468,
+        "pointerEvents": 370,
+        "validStrokes": 18,
+        "textEvents": 80
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-9.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "afb71682d021fd301859b7fdb5fba8f668fe79eb83b1c56c281c4861ff8d5092",
+      "modelInputSha256": "a30e4bea3cf744a25981e7520bbe93764349a03bca8cc309e66bb6810721c0a6",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.038709005841976,
+      "quality": {
+        "events": 396,
+        "pointerEvents": 296,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-10.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "bdb4772d7cad6978ae15ca4eb7b2ab089649e1ae029344a92cf73dc2d54a2918",
+      "modelInputSha256": "c2d38f7d99403d29a92c2f3cb5d49275fb28881f6f0a33e953a47e771cb08fc1",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.998715135260826,
+      "quality": {
+        "events": 426,
+        "pointerEvents": 324,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-11.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "42f29d3171ab1ac2de0441d4e47c37c179d95401f3555b14ae8235df64a56d66",
+      "modelInputSha256": "d9feff7dcf5aa532809406db69ee6a591d0a703911ade294d30a5392568ef7d4",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.036757029421393,
+      "quality": {
+        "events": 438,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-12.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "689473cbb36b590a65a9e946a9889ce4c55a4e08f63c2bde2b01eafac038c478",
+      "modelInputSha256": "264daadf8b0373bd67c26dc83a16e3f48b91a1f13cc0326946f46e92da8f43d7",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.009553986857847,
+      "quality": {
+        "events": 435,
+        "pointerEvents": 329,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-13.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "557b5fd0b5bdbfc24b9773746b5f5959ed9728945bcb55d6bd2cfb3156560f5a",
+      "modelInputSha256": "0562737843bc4c31f2b8c6a4816b4a058c22cb254554c762d80f84b6bab31e0d",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.009423890815905,
+      "quality": {
+        "events": 463,
+        "pointerEvents": 353,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-14.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "f389d8e274a58ba255d8f67d02beef38739fc2fcd44afbb38f0518aca0167aaf",
+      "modelInputSha256": "79afd03ec3c9e79ec87c64dbf006ba2f1511c0579e389c314f765bcad3c04360",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.987936347113353,
+      "quality": {
+        "events": 456,
+        "pointerEvents": 358,
+        "validStrokes": 18,
+        "textEvents": 80
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-stranger-15.jsonl",
+      "label": "stranger",
+      "style": "mouse-keyboard",
+      "recordingSha256": "cac4d644e021471e2a3b5891488c02d57343a1190edba29e3b2ba836daf5e79b",
+      "modelInputSha256": "2bc83ddafa5b5170886eb0526c23a0502a82cf23ff09c85384681d9a2c686cd9",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.060626540486329,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 345,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-0.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "056013a02bac5b97692a01c3cd279783f71c744a76247d17f27e852de10e213a",
+      "modelInputSha256": "e0bfe7fdc8eb0abfe2d57a33b62adf7d172661459d97275172c8169ca9047504",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.063305279136205,
+      "quality": {
+        "events": 439,
+        "pointerEvents": 327,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-1.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "3df33b6adf923f259e7999488a5b765d142e0a6078065d31f5d3a76f64ce33d2",
+      "modelInputSha256": "ad59e7c59fbad44597f7efe6529dbecb780f492292c9fb304b93d19e6cf387a6",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.073886613196939,
+      "quality": {
+        "events": 457,
+        "pointerEvents": 329,
+        "validStrokes": 18,
+        "textEvents": 110
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-2.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "0639d05f163b71d0dbacad6a1e443be940c736a950964bfc939bde745bdffbc6",
+      "modelInputSha256": "4baae715814a7f8a9bdea09ace871e36d7e60a334f211354b7783581fcb1d6a7",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.006006706629194,
+      "quality": {
+        "events": 443,
+        "pointerEvents": 339,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-3.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "f62f7c8bfcabc98cb4764210d0a71c7284592983c4fef10bdb1ae920f93935f0",
+      "modelInputSha256": "4c7d2f86ebd88225114cb8090821f4e12d41457737a6cae492559a17fb1becf5",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.027512315869292,
+      "quality": {
+        "events": 448,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-4.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "90893daa1b2edc0437f64edc00614fd2a72ce9ff00fa6aeb9b3154522e412a3d",
+      "modelInputSha256": "34b8ec6608a035e006abfb1e6672667d9aab2c08e071c14fdb4b388ec12eb783",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.073890235741405,
+      "quality": {
+        "events": 467,
+        "pointerEvents": 353,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-5.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "e3d086dce43ae327bb989a2ed4ddf505498a42c97e5e505634ccf824b19051af",
+      "modelInputSha256": "8b90c466c375079648a39e86703e68c8cbf2e495bef1ca86ed2c5d319e899c2f",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.084928312099628,
+      "quality": {
+        "events": 443,
+        "pointerEvents": 331,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-6.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "a1235c02bfcdc1a7ee50059b929f06bde57be881c61f19e7fabe1a22cc2133bb",
+      "modelInputSha256": "e44fd7dd53b3f5c5a1d38c7b3f3d33a7cebe754090ad0fbcb8d21e6e1ad584b0",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.096857315136597,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 328,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-7.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "741b2d1498748af9d8c7c4ec70eb959e3344b055635832293eb99c8849f5a1e8",
+      "modelInputSha256": "9df14faa2808b53e8539868a9cac29ccfa798f4bf9f938eedfa03a925b7d1594",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9113768822344657,
+      "quality": {
+        "events": 450,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-8.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "4ed8aaa39d924216508d7b9d6698a956a9afdfdc1a6dbcaf6c5072d31dbb5fb0",
+      "modelInputSha256": "5a555e6d3517ad951d8f20d1ea917f89bd2a19f649cb89a3958470b941c6ec27",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.0201974248646515,
+      "quality": {
+        "events": 443,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-9.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "7ee7acdb82a9744a807bf5eeaf89eca9809356bc20d9037e9e3c262214f57cbd",
+      "modelInputSha256": "b8622de432fee6fea8cd8643baecb4be256fa4493906fe8de67b849c35177aae",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9218397366627813,
+      "quality": {
+        "events": 429,
+        "pointerEvents": 315,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-10.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "41f9ea8146952146581c8c574b5336ac16760d355f975496fd10b5570369ac3f",
+      "modelInputSha256": "0e62689a98143b8ccb668dd006848c3d73f60995dc97ef8fd904af92d7e399a5",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.983452816170647,
+      "quality": {
+        "events": 462,
+        "pointerEvents": 344,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-11.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "ad3a9fb2e651623b5499fae5cce555f78b949e2106b95081214dd67b1d9dc1a1",
+      "modelInputSha256": "8b59589b7d1a12fb8cc77f44589e6f4f89d02478ab344a9f7c2f8bbc1d336347",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.91789886528423,
+      "quality": {
+        "events": 455,
+        "pointerEvents": 329,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-12.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "bbf238a3f6353f7c8134a2b5c8b1001a554c58887ba82c7d11b692cf92d8b4bc",
+      "modelInputSha256": "23d9fb3118ab04ac9db71a8a20c461770e7051aec3f013d026e6017299788b45",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.1194002403061205,
+      "quality": {
+        "events": 449,
+        "pointerEvents": 335,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-13.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "08d0ba0e33290f9e5e207e92f401d5420d8674bc7c2f43b7082f3eae14f8a78b",
+      "modelInputSha256": "12ef589e7cd3e9e557695cae49462916f97a381bb9f9f565a31ca4443b9389fc",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9055606266050296,
+      "quality": {
+        "events": 459,
+        "pointerEvents": 341,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-14.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "e88da22538ca993705624e1b600790c26f94a2407d6169d3075124933773f824",
+      "modelInputSha256": "67bbdca1af0d86baf779a8ceebbe370e3c7226c5b20bf2b01af013b014c6d5ce",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.060496775810376,
+      "quality": {
+        "events": 465,
+        "pointerEvents": 337,
+        "validStrokes": 18,
+        "textEvents": 110
+      }
+    },
+    {
+      "path": "test/alpha/mouse-keyboard-mimic-15.jsonl",
+      "label": "mimic",
+      "style": "mouse-keyboard",
+      "recordingSha256": "7d27bede50b544a6dea7ced6d3af2171d33a4d5ce46f873c0c14635fd5d0e54d",
+      "modelInputSha256": "1cc661af4ed754c7699fb8fb75c4f2135a42aaee0b8b8844bec5fbab937ebd35",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.892363179730515,
+      "quality": {
+        "events": 449,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-0.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "72b0dc78d5a6d6ab47a91dd83fffc62dfd91653de9bd727a98006a1ffbcfbfb0",
+      "modelInputSha256": "c12da759ebf6ec41d2b78bdb26bc00526dfb83c921a995a6920e90271398802f",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6227642729060244,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 337,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-1.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "39a7f401dd4baef80ed7d4c0f35c520a5825ce230f3958b3307997255e8b66f7",
+      "modelInputSha256": "66f3b48c11a1addc0aabfa282b10fec5a6097f313e7480478155a1b2f3b7a82c",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.48736594722017473,
+      "quality": {
+        "events": 474,
+        "pointerEvents": 356,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-2.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "b431b617003684f3ab46d5db6ef657fa45b6b75a15919c351867cbc175c137d2",
+      "modelInputSha256": "f5d343cb8765acf13dcf6e4edc947cf6ffc9d204abffad3b56acee7c0b3b0404",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3422670529598254,
+      "quality": {
+        "events": 414,
+        "pointerEvents": 300,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-3.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "399f0d2a92c55b23b40ff72fc125bd0376eefceee412993e8c934f98917674d7",
+      "modelInputSha256": "be3106c2e3d874f10b23a0794025663afcc9a0c487e68d99a844bd0293032d89",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4085429864161019,
+      "quality": {
+        "events": 426,
+        "pointerEvents": 316,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-4.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "04de16e854910b0fa75f9fceefdd0ecfbd025d014c71c5da758b6a1e571e8eb3",
+      "modelInputSha256": "cd7e381d594187a8374086c608739804faa9cf5057ae5cec7627cfa0b22b200d",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.8298762542992169,
+      "quality": {
+        "events": 448,
+        "pointerEvents": 322,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-5.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "06560c7d0260f04bd613caf63b3716b4462871e189bf194750c038f1d23c5805",
+      "modelInputSha256": "b1f26dec5d3992fdd80ef7245ab8e0aa4ed295d7c610381f4ac3b5817311f561",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.8208814328098184,
+      "quality": {
+        "events": 444,
+        "pointerEvents": 320,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-6.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "6727a094633458b81c34bc09c37baab531f6ce61eae0a28c43b099c1450a2630",
+      "modelInputSha256": "09c4c67e758a73b924f51a251942081ee115de33ab6294a7fcfd4746e0290f25",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5436339422672682,
+      "quality": {
+        "events": 442,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-7.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "c06702ecd645ae7daac095397b99293b1414c4cc555ad116d05dda6f6290a18a",
+      "modelInputSha256": "c5b526fad500bd29f30f4cda871d00d8bc551d8eba674e68ff90eb30c2ae3caf",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5522344934186372,
+      "quality": {
+        "events": 445,
+        "pointerEvents": 335,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-8.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "0300dbf42a1b0072f4fc8d2936dba9fdaffff2b4cc8af2ea346636a2d8fb5ded",
+      "modelInputSha256": "c3043dea065f80b98bb2257c67eef62add2912d82d5ec5f6480898e814bbb912",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4108136295642648,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 339,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-9.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "c068c627e56c3eafdf387b5c4427644a6af3ce4d9819b7106b0a1f958b355035",
+      "modelInputSha256": "e86aec23fefe8e2fac7bfef2eae14a29fcf7f54dc248c8ef755cf6ce2a6f7979",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4286462282070125,
+      "quality": {
+        "events": 432,
+        "pointerEvents": 324,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-10.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "3d04a921eefac801616051d1f4992f2e3aa9779ef868cf970c65adf8ab9ad8bc",
+      "modelInputSha256": "a6f8343cdfb6737adccf7706847d41de300a87d383df9cc7b9279c9899476a13",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.322073681463845,
+      "quality": {
+        "events": 418,
+        "pointerEvents": 312,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-11.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "fdf2b468b033153237adf043bce1312d8b8450817bbfb00823a85e6bdc64c90a",
+      "modelInputSha256": "aaae5866e192d54f8c811cf4639ef61ad998de8eca17c6c2373eecd9916c3a3a",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3328420472292614,
+      "quality": {
+        "events": 419,
+        "pointerEvents": 315,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-12.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "177028cb91c138c6b498eeef76b8058bb5f64c1d0a7da2d289316ed2a71155aa",
+      "modelInputSha256": "aa2adafc217c8c4cba43c8ce883670d743424efc1f65a020ba7bd50e9d9023b6",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.41737896240926425,
+      "quality": {
+        "events": 432,
+        "pointerEvents": 326,
+        "validStrokes": 18,
+        "textEvents": 88
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-13.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "447a1fbc5458b4bf88e35b8930a6fe1a86747d64e08e21d59c226491bb1dc738",
+      "modelInputSha256": "c07fc711d460c35f52133f413989cf32d1178f0fdb26024469f2ca4c5f822d0d",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4406287207927763,
+      "quality": {
+        "events": 435,
+        "pointerEvents": 321,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-14.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "8a149483302d708e33b0a6a5177f263d28088a75908473106a59338fc780986c",
+      "modelInputSha256": "33a8e53dd383b9e6e5a58574d7f67109033011ab7e936af9b86aec54455c99d1",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4865765141017757,
+      "quality": {
+        "events": 464,
+        "pointerEvents": 348,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-owner-15.jsonl",
+      "label": "owner",
+      "style": "slow-dictation",
+      "recordingSha256": "6df635d6d0a8d27e94ead84b0a0b8f0f3e6377d111e5fab7d0c20ecca74c92be",
+      "modelInputSha256": "264fb55b52bc451d9d92d4be3cabd5985cce8884e211ba23e6abe239151ba576",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.7616678798060785,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 310,
+        "validStrokes": 18,
+        "textEvents": 112
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-0.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "42bcb1f12468193daf524971efc118301bfc37ae134e4442ae8587fa2fbd6766",
+      "modelInputSha256": "732537e3a0d5736bd9e5a0430e4ec676dcb2d83e1e7fb33836da4d5272772c0d",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.748073392075488,
+      "quality": {
+        "events": 465,
+        "pointerEvents": 349,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-1.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "f3a89506b628d2ac246a661a79c4fb6ec8c9704e174acbe4f2c911b8ed2b0a51",
+      "modelInputSha256": "e64e018f7ca7f3968e9bf8678242645e188bf16d95240f5d8853d75cd8eb5645",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6983484103345252,
+      "quality": {
+        "events": 466,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-2.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "946c38e18c80daf83da5302fe7337276b3e9d7287a0d738beaa9c9366783a36c",
+      "modelInputSha256": "de575477ac2f2a20a25f500f7f5972d6e83496371c187a9f030c8e833c383b74",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.5570909181559243,
+      "quality": {
+        "events": 474,
+        "pointerEvents": 356,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-3.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "2cb7bb9a31c8994b0750eacd5b6e1c90392ae9ecc58c1659ebda87c08defa06d",
+      "modelInputSha256": "e27b54dfea0fc3dd2eb6551d9e58ea2739e11bd0f684815881b92c84391636e4",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.3997190301520038,
+      "quality": {
+        "events": 441,
+        "pointerEvents": 327,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-4.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "926a3c4598c3475cd01e77fdeadac77747590cb4698b3344eab3a37bd11de1ea",
+      "modelInputSha256": "6dc7e8382eabc232a42a07731e44b018ff0d2b15a625fc36883516cdb85f562d",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6695347751070307,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 316,
+        "validStrokes": 18,
+        "textEvents": 106
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-5.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "1c030fbdc1d3e6ee6aeb61004b450d56ed6ae7f41b90e950738966ddb0946cdf",
+      "modelInputSha256": "48497b67a34fee620a53af9c91e3b83a3628b3e6757b9d16b377495f837183ac",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4797043768430324,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 337,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-6.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "55284c7bcc7beb2c82ea411eda7e60658da0068b4639b105fb9e798dd7875fac",
+      "modelInputSha256": "2adb76d9b66a6d5444cd2663d5ba77056c9fa79b7e17ae48d29a921989852a7e",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.8065468374274914,
+      "quality": {
+        "events": 470,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 110
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-7.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "bccdeeb5c6862ad83a85facba846113650ad80f6128a2203bdb49abf17f5bdc7",
+      "modelInputSha256": "fc4d6eb1a9d332e42c518257ac48ba50ef8219f263ba1f499771cb58b59cad8d",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4468598909473998,
+      "quality": {
+        "events": 475,
+        "pointerEvents": 357,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-8.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "6a7f183ae4fe05857a76e3864c1120b7a4339d80e97f62a6333d3cea464948a7",
+      "modelInputSha256": "2e0cd42f71003cf20a515b4d6457789009fdc35be594cc43819323ed368ab1e8",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.4119659599382167,
+      "quality": {
+        "events": 471,
+        "pointerEvents": 353,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-9.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "406d3e658144a80af244c72fea08f6959b6bd6bac24728df2f187f4bf51453ac",
+      "modelInputSha256": "d290b5d4103d6d15c4ee8c340fdbba26ee5e3b9cf6b7494ab29154bf3196389e",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6955627750630459,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 327,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-10.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "58eb9500906c2c758489d45c0c031006bbc0c5bd0a2b221941ac2e5892877f78",
+      "modelInputSha256": "650193522e1aa9eb6eb3ac2600bfc46bbbc8c414fb26a091b98552f04453f62b",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.32515579692070745,
+      "quality": {
+        "events": 432,
+        "pointerEvents": 322,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-11.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "91af83c79f4fb57bd6e258c27961ffd4c98d38f2066156aa0c7e8f1fa42049bb",
+      "modelInputSha256": "48cbb1c39a523c6dadc5571e4ebac03744d7917e7fe49bbe832f9cbf1b4dc048",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6350749002839978,
+      "quality": {
+        "events": 457,
+        "pointerEvents": 335,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-12.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "9bb7cfc0206cd9cc4b67604950087330b87a4c6436b9883b7c2a5bcdb3a3a186",
+      "modelInputSha256": "69fbfc1b65707a44aff059623f480769b2c8231ba2d6e64c12aeacd0fd89206a",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.6828496776781444,
+      "quality": {
+        "events": 430,
+        "pointerEvents": 314,
+        "validStrokes": 18,
+        "textEvents": 98
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-13.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "8b9003a2292dc3d69fce9ed9e725df7b78ed4f420d05f6b2160bf4a54b4e8eb3",
+      "modelInputSha256": "19e57b0c3137aa09ff48c1952e6cce7efcba820327463f36fa56571351a3c196",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.7788355675098468,
+      "quality": {
+        "events": 451,
+        "pointerEvents": 315,
+        "validStrokes": 18,
+        "textEvents": 118
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-14.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "a03cedd525d4887bba25ddb516d8553d50d5f4e4714d1d348b43a9efa4d95daf",
+      "modelInputSha256": "f932d0653af8666acffeb3abb73d5ee2bc3e57f1951ed2a435174c21f0bea01e",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.2613164738815277,
+      "quality": {
+        "events": 446,
+        "pointerEvents": 334,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-tired-owner-15.jsonl",
+      "label": "tired-owner",
+      "style": "slow-dictation",
+      "recordingSha256": "fabcda729816bb2287aaa6b353669246fa87f88ae89b793df43df2ab51cb1e8a",
+      "modelInputSha256": "f757371c52b808c81da7715682360ea9b80a082f395edb53675354ddc41dc2f3",
+      "decision": "accept",
+      "reason": "within_frozen_threshold",
+      "score": 0.8161674276210508,
+      "quality": {
+        "events": 466,
+        "pointerEvents": 340,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-0.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "c94cc77f9eec8b179f0cef9b4f3d85768f86d0afb292a7983eedf378d2ef583b",
+      "modelInputSha256": "166295d294ec8fde6b4d459f0d62f30cfb7d4b24593987e6ecd08804d48d9e06",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.066452358669202,
+      "quality": {
+        "events": 430,
+        "pointerEvents": 330,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-1.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "0e7b257aa501580a72a22e4b5e9065c4ef030ea5a8bd19e5bf398e060493c199",
+      "modelInputSha256": "a6143e89aebf74ce884484b11ab2622f9f8ab0ec663aa08c02af57510efc16d1",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.022093089958313,
+      "quality": {
+        "events": 430,
+        "pointerEvents": 334,
+        "validStrokes": 18,
+        "textEvents": 78
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-2.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "b37dbbbfc04804948c0ae9fbc7068c4e2b671fbf706d19d9148198a956bd6653",
+      "modelInputSha256": "67b680206cef16e3cfdd24276cfde67e868e12b225c585286e5d5d52c1b785d8",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.027026393693174,
+      "quality": {
+        "events": 458,
+        "pointerEvents": 350,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-3.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "dd252ecd6d3ca2986c598af508a545f42ac0c623f1a3b3971ba2223995c89272",
+      "modelInputSha256": "f3eaa674642b0ef2ba522b7665f7c085ce9ea2f10f2ef36af3f12e258b5853fd",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.972282388145097,
+      "quality": {
+        "events": 441,
+        "pointerEvents": 339,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-4.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "52eaab3b6981e61a28994fb6c1bd63002666d9a8eb369ae32dbd82731d181b6d",
+      "modelInputSha256": "6685311c7393ab93120627dfc11cd28a55d686375831f51214afbfee06349e5a",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.9911602846882746,
+      "quality": {
+        "events": 412,
+        "pointerEvents": 312,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-5.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "462f3538fe438100f254b4902a06d270f821cc4f5c5c42d1cc6f344cf1e53084",
+      "modelInputSha256": "e5a6bbfe0e943c10d402f3160546e77987ebe323dd061e0a2111bf6914b4c65d",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.0299132005876315,
+      "quality": {
+        "events": 434,
+        "pointerEvents": 330,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-6.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "0f8de78e91b09d8b01ff79ba401058a9dc3ff8b792f4355ff9453c18f76a9889",
+      "modelInputSha256": "5bca80293b4b4da1e4181defd6ed48ffa63b093fb686ed8ef4909126a1a4f651",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.03636431152728,
+      "quality": {
+        "events": 424,
+        "pointerEvents": 328,
+        "validStrokes": 18,
+        "textEvents": 78
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-7.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "19419fb2e6b145e38d3dd248e1119d38d3589d6f36e0dde4172c579c096d0d1b",
+      "modelInputSha256": "c8f7ecce44c6e849ad9666d3d716f83b22f390e30825965bbbf3d23dd12c1184",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.045007582479726,
+      "quality": {
+        "events": 443,
+        "pointerEvents": 343,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-8.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "642514c19fa53981d935dcce5e795a9184b407235f9351278b603436383a25f0",
+      "modelInputSha256": "a12f4dc6dbab13232cb07f8c69b9f23bcd0b9233ecb8e48ee977dcc4de4851e3",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.05361100671982,
+      "quality": {
+        "events": 438,
+        "pointerEvents": 342,
+        "validStrokes": 18,
+        "textEvents": 78
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-9.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "6b6ff8c3e71b76dfff12edf0836b636cece1982107fee083a701550d96bcc513",
+      "modelInputSha256": "b47e65c85fb88901b44b0f39bb2997349b1cdf7f3e4d4a45b679b8022b6eff82",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.012303546677011,
+      "quality": {
+        "events": 447,
+        "pointerEvents": 347,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-10.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "262def9135c42ec134631a3dacab0078649fa1f06164b1bf8c28badf3e03a5f4",
+      "modelInputSha256": "67047dd0a29bc1cc1d46d4794eb1f371f965d303313810dd172bfa8386da5234",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.0075257997345455,
+      "quality": {
+        "events": 405,
+        "pointerEvents": 303,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-11.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "d847b066872c19cdc4e60cc83fdb914877dc17d544e9cd46077eed3ba54327e7",
+      "modelInputSha256": "8487ca9acc463b3cdfc7c32dc5eaf5ab306584dcb7aa22fed6dd477991b1883e",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.0011923378848335,
+      "quality": {
+        "events": 420,
+        "pointerEvents": 318,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-12.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "4200c9f765f0191f80e7e171bd2e790c3cf28c510c38118ab126460d8c629bee",
+      "modelInputSha256": "b44316f217a8b912ff305d310d3d280e965aae5437c368180e9464af89ca1da8",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 6.037326802074794,
+      "quality": {
+        "events": 435,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-13.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "aa9953e2c75f61a401d03a190ede3fe70115893b995e7609e87748d51d03c5ec",
+      "modelInputSha256": "04a53f10da2f8d97968c42ea2e1d415203de38fd1ee77a3f12086637c7510945",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.9838385322867085,
+      "quality": {
+        "events": 453,
+        "pointerEvents": 353,
+        "validStrokes": 18,
+        "textEvents": 82
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-14.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "de33af8b5ee6e38f30a8f8f072975e3e3e446e96cb9631ae65b5d5bb361cbc38",
+      "modelInputSha256": "5afed7a3c96344650702ac1a361ae0b10a8514fd2b9dd88dd9e57a759c75609f",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.997588535594725,
+      "quality": {
+        "events": 423,
+        "pointerEvents": 321,
+        "validStrokes": 18,
+        "textEvents": 84
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-stranger-15.jsonl",
+      "label": "stranger",
+      "style": "slow-dictation",
+      "recordingSha256": "bdccd5772198cb3bd44a18cb993fdb99d910044d2eb95432ce251a17bf2d6568",
+      "modelInputSha256": "9fd2c6a083760f25ee37e51672667639cab955b53f431b6e9a44820c8cb0a7c3",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 5.99603888329693,
+      "quality": {
+        "events": 425,
+        "pointerEvents": 321,
+        "validStrokes": 18,
+        "textEvents": 86
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-0.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "28db5276566b0867515c3139772386cd054252803c6e4e67641c2dad7b73a9be",
+      "modelInputSha256": "fb7cc6864b7bc811861f9b2a559f0711f5701d6b31202c4c7785c8d20a9e1a58",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.038429225410904,
+      "quality": {
+        "events": 430,
+        "pointerEvents": 318,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-1.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "970f3fce5230e86320baf853427efb0542b6df6a7dcc1e97dd93415b82237d79",
+      "modelInputSha256": "9ea20f4cf8884bb56a47e47b8ea3fc71b7e8209aa111d4d532dca8e78251c54c",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9639281268237907,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 330,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-2.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "d40c217b15d5d708200d3a82fe11da0fdf0849eb48aa28125c860fa132e16f90",
+      "modelInputSha256": "d9d81a0c189150e3b214464f239b7c5956af92843e80cdd9cd62bf6d39e86240",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.070409792289252,
+      "quality": {
+        "events": 458,
+        "pointerEvents": 344,
+        "validStrokes": 18,
+        "textEvents": 96
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-3.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "91c58d6e861a4c87fa9b57a3d7ecad5fb656c3dc6c52da6df863f5b308eeac29",
+      "modelInputSha256": "964f3d4541452f4a545b9c235891b9769ecee77b685e7811d89122d1e9ee238a",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.036944580861561,
+      "quality": {
+        "events": 439,
+        "pointerEvents": 327,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-4.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "34d315b3a764e834596eeeb0e3efd0966048e480681b2a3ba695b813c7c41141",
+      "modelInputSha256": "e3ae08cfff3908d4a15547aa052c8cfbf134e66bf84391ad097b0e8cae2b3a79",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.8343505143994117,
+      "quality": {
+        "events": 467,
+        "pointerEvents": 345,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-5.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "2fc81893e2c7d410da2d1c73d6e71cf1270974f3f230b115dce0bfa0efb0b451",
+      "modelInputSha256": "745898e646770471b826477a0ddbbcd9bb9340760575d7d1473da572b2eb23b5",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.082969611331913,
+      "quality": {
+        "events": 419,
+        "pointerEvents": 309,
+        "validStrokes": 18,
+        "textEvents": 92
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-6.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "b7ce8569eec88ea351c741756880c99b1fa5ce14acdf76f4b8a320538e641018",
+      "modelInputSha256": "5bd2118ee49e7c8266606c9c19039ed3612809b7a64c2bd1059e4eb494f77da8",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.904911740551232,
+      "quality": {
+        "events": 440,
+        "pointerEvents": 328,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-7.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "a96cd8f44830d231fb73ef0cc11d330ef7bf831b182ed93da080ca194784ccf8",
+      "modelInputSha256": "cf3abdeafd33fefecb50e9cb54d7af5329fd2304be540f9d25e74a0d2394a6ea",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.086633495732638,
+      "quality": {
+        "events": 434,
+        "pointerEvents": 322,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-8.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "5dba89e0d2021116d35a3c3939194f3cdf3f0cb6c17663b93946c275df767c2f",
+      "modelInputSha256": "79b657ff7068d1fb52c03cd9a57209db05c93a10c0143de0a200c579a54bcc53",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.927907632629984,
+      "quality": {
+        "events": 475,
+        "pointerEvents": 363,
+        "validStrokes": 18,
+        "textEvents": 94
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-9.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "0a1311ae8b9d70fab0a82cbc19f9ccfa89a4e2a57984a970783bf91541b3fc4c",
+      "modelInputSha256": "277a1eb2f6b01930083c7714d98e419a4469de13343d6aaaab3f878009115e19",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9682495919960235,
+      "quality": {
+        "events": 475,
+        "pointerEvents": 349,
+        "validStrokes": 18,
+        "textEvents": 108
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-10.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "c8981f96b49443becbd32a245f41a98af3d5c283fb098a696fa7d9830b6ec74b",
+      "modelInputSha256": "347484b14493e9cfaf65aac5e0ff6c818e96ec9ec4d284268ee69246a6302a35",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.989611613932614,
+      "quality": {
+        "events": 451,
+        "pointerEvents": 333,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-11.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "c01044c566bacd0a28f7b934bbbadc3cf41ed5049b307e1435d99fe08bdf23e6",
+      "modelInputSha256": "656deabe26d16ff00cacc3d341e1a29de1a0b2b1bc6b8f5a88beef9b5d808c10",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 3.9671715397490406,
+      "quality": {
+        "events": 434,
+        "pointerEvents": 326,
+        "validStrokes": 18,
+        "textEvents": 90
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-12.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "1218ac53af6c02ea2b9c727b101bbd02bad0133a7b756355b93bbe9e6f9511f9",
+      "modelInputSha256": "72c5be69ed8b784332dee1ab7063b9157b6ade84d7aed868067607d7531d9ed2",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.016170018695599,
+      "quality": {
+        "events": 456,
+        "pointerEvents": 338,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-13.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "9cc146186d84d21816895e324e8b2ce8f0f121771d0a829db686a850fc845a04",
+      "modelInputSha256": "01d7123e27de84b8301fa7e8f4315c8a8bc42e9e33db6209201349f91adc4612",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.066821173477768,
+      "quality": {
+        "events": 485,
+        "pointerEvents": 363,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-14.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "5ff441dee9f6c8bf2dadd9fc8955e1bb5aac2aff49a3264426a9b1490cfbdc0a",
+      "modelInputSha256": "792b769b0da27ed32b524e72a09c5f270ea44380a074c15f58b850e6c21043c2",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.04115104276717,
+      "quality": {
+        "events": 472,
+        "pointerEvents": 354,
+        "validStrokes": 18,
+        "textEvents": 100
+      }
+    },
+    {
+      "path": "test/alpha/slow-dictation-mimic-15.jsonl",
+      "label": "mimic",
+      "style": "slow-dictation",
+      "recordingSha256": "d2bacef09a5a655668625d939ac9ae200ae1056375c1289b1a8b0812d7b55144",
+      "modelInputSha256": "64fba6758674fc6d6e2e0a4850f2ae1aeb9dbc6d6300f912067c585c304c9ff9",
+      "decision": "reject",
+      "reason": "outside_frozen_threshold",
+      "score": 4.063072820291785,
+      "quality": {
+        "events": 432,
+        "pointerEvents": 310,
+        "validStrokes": 18,
+        "textEvents": 104
+      }
+    }
+  ],
+  "uncertainty": "Wilson intervals describe these finite synthetic trials only; not real people, devices, independent operators, or deployment accuracy.",
+  "speedMatchedMimic": {
+    "syntheticOnly": true,
+    "profileSha256": "2cc509ebb408f3af7f63e1f351bbff838dc2c4dc2495b689b42e4f10f9f6175a",
+    "threshold": 0.8520219567041128,
+    "thresholdUnchanged": true,
+    "design": "Same 32 held-out mimic trials, with their source/input mode preserved and whole-session clocks rescaled to the observed normal-owner mean pointer speed in each style. No feature, model or threshold change.",
+    "statisticalLimit": "Derived variants of the main mimic trials, not 32 additional independent observations; do not pool denominators.",
+    "meanSpeedUnits": "Screen-fraction path length per second of motion (sum of click-delimited pointer paths / sum of their motion durations).",
+    "targetByStyle": {
+      "mouse-keyboard": 0.5670936101030686,
+      "slow-dictation": 0.18776679123302792
+    },
+    "maxAbsoluteSpeedError": 3.3306690738754696e-16,
+    "allSourcesPreserved": true,
+    "mimicFAR": {
+      "numerator": 0,
+      "denominator": 32,
+      "rate": 0,
+      "wilson95": {
+        "low": 0,
+        "high": 0.1071791982550706
+      }
+    },
+    "byStyle": {
+      "mouse-keyboard": {
+        "strangerFAR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "ownerFRR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "tiredOwnerFRR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "mimicFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "abstentions": 0
+      },
+      "slow-dictation": {
+        "strangerFAR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "ownerFRR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "tiredOwnerFRR": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": {
+            "low": null,
+            "high": null
+          }
+        },
+        "mimicFAR": {
+          "numerator": 0,
+          "denominator": 16,
+          "rate": 0,
+          "wilson95": {
+            "low": 0,
+            "high": 0.1936076805344365
+          }
+        },
+        "abstentions": 0
+      }
+    },
+    "rows": [
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-0.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "b3a9b521f287af1657e8c09f457103a8da0ed2c665d9143948baf27c68154238",
+        "modelInputSha256": "e0bfe7fdc8eb0abfe2d57a33b62adf7d172661459d97275172c8169ca9047504",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.0633052791362045,
+        "quality": {
+          "events": 439,
+          "pointerEvents": 327,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-1.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "8e6fd9d4b4611e3d11ae324cc6f0f743847c71c6a22c08f277017cd2864a20a9",
+        "modelInputSha256": "ad59e7c59fbad44597f7efe6529dbecb780f492292c9fb304b93d19e6cf387a6",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.073886613196934,
+        "quality": {
+          "events": 457,
+          "pointerEvents": 329,
+          "validStrokes": 18,
+          "textEvents": 110
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-2.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "113c4f4899566d71b79b9ab68c64adfc4d7536a98467f24731a62936bdefd5a9",
+        "modelInputSha256": "4baae715814a7f8a9bdea09ace871e36d7e60a334f211354b7783581fcb1d6a7",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.006006706629172,
+        "quality": {
+          "events": 443,
+          "pointerEvents": 339,
+          "validStrokes": 18,
+          "textEvents": 86
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-3.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "61c33e9d907fb6a2be480ee4b66d47680e601f3a16d94c12b7c313f7a4335d5e",
+        "modelInputSha256": "4c7d2f86ebd88225114cb8090821f4e12d41457737a6cae492559a17fb1becf5",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.027512315869289,
+        "quality": {
+          "events": 448,
+          "pointerEvents": 338,
+          "validStrokes": 18,
+          "textEvents": 92
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-4.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "7291637dd1f4a2d3597d8754a1c3118f7fa58a51e42134cd49869c9e710816de",
+        "modelInputSha256": "34b8ec6608a035e006abfb1e6672667d9aab2c08e071c14fdb4b388ec12eb783",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.073890235741396,
+        "quality": {
+          "events": 467,
+          "pointerEvents": 353,
+          "validStrokes": 18,
+          "textEvents": 96
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-5.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "a03daaff78acc732cc5eed4047b87be1e55002a03982fc323df56721d1e10f0b",
+        "modelInputSha256": "8b90c466c375079648a39e86703e68c8cbf2e495bef1ca86ed2c5d319e899c2f",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.0849283120996205,
+        "quality": {
+          "events": 443,
+          "pointerEvents": 331,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-6.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "91b342e1539396bb3e80655fded96a1cc08e9c5b860efb5838456a04ad81048c",
+        "modelInputSha256": "e44fd7dd53b3f5c5a1d38c7b3f3d33a7cebe754090ad0fbcb8d21e6e1ad584b0",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.096857315136622,
+        "quality": {
+          "events": 440,
+          "pointerEvents": 328,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-7.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "02ef938e0acfea0be5b42a39143fa389486360a42dcec8bca5ebeceb43f9005c",
+        "modelInputSha256": "9df14faa2808b53e8539868a9cac29ccfa798f4bf9f938eedfa03a925b7d1594",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.911376882234463,
+        "quality": {
+          "events": 450,
+          "pointerEvents": 342,
+          "validStrokes": 18,
+          "textEvents": 90
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-8.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "c3ae23789dae5ef9e4eda476fe58c43b512ed9d23e12598157cbec4441ed63d0",
+        "modelInputSha256": "5a555e6d3517ad951d8f20d1ea917f89bd2a19f649cb89a3958470b941c6ec27",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.0201974248646595,
+        "quality": {
+          "events": 443,
+          "pointerEvents": 333,
+          "validStrokes": 18,
+          "textEvents": 92
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-9.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "9c57ed44728fedc55372b8a06c5f9e53a4f5d718bdcc67a013521a72b85fccf9",
+        "modelInputSha256": "b8622de432fee6fea8cd8643baecb4be256fa4493906fe8de67b849c35177aae",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.921839736662778,
+        "quality": {
+          "events": 429,
+          "pointerEvents": 315,
+          "validStrokes": 18,
+          "textEvents": 96
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-10.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "b8a5ba1f0a1b1ed5079da0136a16c897ce450b540a6372a550988372a0bac8eb",
+        "modelInputSha256": "0e62689a98143b8ccb668dd006848c3d73f60995dc97ef8fd904af92d7e399a5",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9834528161706477,
+        "quality": {
+          "events": 462,
+          "pointerEvents": 344,
+          "validStrokes": 18,
+          "textEvents": 100
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-11.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "3cda0e283d5b09d804d21c8f15052ef2f3842cdd579802defc438cb40385dcd0",
+        "modelInputSha256": "8b59589b7d1a12fb8cc77f44589e6f4f89d02478ab344a9f7c2f8bbc1d336347",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9178988652842293,
+        "quality": {
+          "events": 455,
+          "pointerEvents": 329,
+          "validStrokes": 18,
+          "textEvents": 108
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-12.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "fd10ca5f0786bed8795ae491d6059ad6ca547baaf15476438760b6232c2e076f",
+        "modelInputSha256": "23d9fb3118ab04ac9db71a8a20c461770e7051aec3f013d026e6017299788b45",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.119400240306125,
+        "quality": {
+          "events": 449,
+          "pointerEvents": 335,
+          "validStrokes": 18,
+          "textEvents": 96
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-13.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "8371e19ca8e5ff900928dc83483b825bf1319147f40862299da1e80e70c8833b",
+        "modelInputSha256": "12ef589e7cd3e9e557695cae49462916f97a381bb9f9f565a31ca4443b9389fc",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.905560626605039,
+        "quality": {
+          "events": 459,
+          "pointerEvents": 341,
+          "validStrokes": 18,
+          "textEvents": 100
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-14.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "a653e39c52ad0aa486a28b5215a24bdd2ed8001ccc18a49e21896b2f9c748e44",
+        "modelInputSha256": "67bbdca1af0d86baf779a8ceebbe370e3c7226c5b20bf2b01af013b014c6d5ce",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.060496775810356,
+        "quality": {
+          "events": 465,
+          "pointerEvents": 337,
+          "validStrokes": 18,
+          "textEvents": 110
+        }
+      },
+      {
+        "path": "speed-matched/mouse-keyboard-mimic-15.jsonl",
+        "label": "mimic",
+        "style": "mouse-keyboard",
+        "recordingSha256": "05463f59e09b73edecf5b6b09e395292d8e10ba73043360a7eef7076cc23db98",
+        "modelInputSha256": "1cc661af4ed754c7699fb8fb75c4f2135a42aaee0b8b8844bec5fbab937ebd35",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.892363179730535,
+        "quality": {
+          "events": 449,
+          "pointerEvents": 333,
+          "validStrokes": 18,
+          "textEvents": 98
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-0.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "87fde4b0cc85a9c1bf37a8728a3e643710d671e985f9d696b07d6ad9d37b192e",
+        "modelInputSha256": "fb7cc6864b7bc811861f9b2a559f0711f5701d6b31202c4c7785c8d20a9e1a58",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.038429225410906,
+        "quality": {
+          "events": 430,
+          "pointerEvents": 318,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-1.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "16e7af37fc91c552668a80a649225ed08148a8b177a657c957a3b96ab3293c92",
+        "modelInputSha256": "9ea20f4cf8884bb56a47e47b8ea3fc71b7e8209aa111d4d532dca8e78251c54c",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9639281268237703,
+        "quality": {
+          "events": 440,
+          "pointerEvents": 330,
+          "validStrokes": 18,
+          "textEvents": 92
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-2.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "8ca762d28b532e4e59362f2cc64efd39e51518226d607b1fd748d30c557cbc55",
+        "modelInputSha256": "d9d81a0c189150e3b214464f239b7c5956af92843e80cdd9cd62bf6d39e86240",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.07040979228926,
+        "quality": {
+          "events": 458,
+          "pointerEvents": 344,
+          "validStrokes": 18,
+          "textEvents": 96
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-3.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "08a460ed20cfe31aff41697f223adef3cb0b7d670bc748665777807ff8d9ed4a",
+        "modelInputSha256": "964f3d4541452f4a545b9c235891b9769ecee77b685e7811d89122d1e9ee238a",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.036944580861571,
+        "quality": {
+          "events": 439,
+          "pointerEvents": 327,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-4.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "7446759384413e5041c9625a9f4085b8a45b7675333275e0f748189ace78cd36",
+        "modelInputSha256": "e3ae08cfff3908d4a15547aa052c8cfbf134e66bf84391ad097b0e8cae2b3a79",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.834350514399417,
+        "quality": {
+          "events": 467,
+          "pointerEvents": 345,
+          "validStrokes": 18,
+          "textEvents": 104
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-5.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "0de4d7d1927d80fe242d53a625461ab414dd5ae4f97266a0ef814f6d4842f3b2",
+        "modelInputSha256": "745898e646770471b826477a0ddbbcd9bb9340760575d7d1473da572b2eb23b5",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.082969611331895,
+        "quality": {
+          "events": 419,
+          "pointerEvents": 309,
+          "validStrokes": 18,
+          "textEvents": 92
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-6.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "7c32845a227760a64dc4e9d5e11398439d9b168d1e7e3c121ceac8913f480345",
+        "modelInputSha256": "5bd2118ee49e7c8266606c9c19039ed3612809b7a64c2bd1059e4eb494f77da8",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.904911740551231,
+        "quality": {
+          "events": 440,
+          "pointerEvents": 328,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-7.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "4c114f0bccb6b463e1c2d4617e7b596f42cbbf191bd41ca82fc0e77350abde94",
+        "modelInputSha256": "cf3abdeafd33fefecb50e9cb54d7af5329fd2304be540f9d25e74a0d2394a6ea",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.08663349573261,
+        "quality": {
+          "events": 434,
+          "pointerEvents": 322,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-8.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "1818284b4f2057a45a3899af9d556101cd2df7d4974e43d658faa6efb115c486",
+        "modelInputSha256": "79b657ff7068d1fb52c03cd9a57209db05c93a10c0143de0a200c579a54bcc53",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9279076326299784,
+        "quality": {
+          "events": 475,
+          "pointerEvents": 363,
+          "validStrokes": 18,
+          "textEvents": 94
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-9.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "48115d6b45f1677acc2c75da48d1a749fbf44a0908a63875c53c26511b064ca8",
+        "modelInputSha256": "277a1eb2f6b01930083c7714d98e419a4469de13343d6aaaab3f878009115e19",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9682495919960283,
+        "quality": {
+          "events": 475,
+          "pointerEvents": 349,
+          "validStrokes": 18,
+          "textEvents": 108
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-10.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "a25d1c0e6117a66e7b0611796ccc449e55f3acf7a9a5629c28a0dcb2a36b5558",
+        "modelInputSha256": "347484b14493e9cfaf65aac5e0ff6c818e96ec9ec4d284268ee69246a6302a35",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.989611613932607,
+        "quality": {
+          "events": 451,
+          "pointerEvents": 333,
+          "validStrokes": 18,
+          "textEvents": 100
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-11.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "e4b61081e0f461f76f08542c4336462d83f1ff33da71d864db16627ddd15124f",
+        "modelInputSha256": "656deabe26d16ff00cacc3d341e1a29de1a0b2b1bc6b8f5a88beef9b5d808c10",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 3.9671715397490357,
+        "quality": {
+          "events": 434,
+          "pointerEvents": 326,
+          "validStrokes": 18,
+          "textEvents": 90
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-12.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "fad55c904f35023a8d9edd85778fb8ff85e90098dc134fd57a602c0fa74b6828",
+        "modelInputSha256": "72c5be69ed8b784332dee1ab7063b9157b6ade84d7aed868067607d7531d9ed2",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.0161700186955995,
+        "quality": {
+          "events": 456,
+          "pointerEvents": 338,
+          "validStrokes": 18,
+          "textEvents": 100
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-13.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "ba4b0ebb518c1c7fe75b38bdc17f62b48d61a7dd9a442b336e456699721792fa",
+        "modelInputSha256": "01d7123e27de84b8301fa7e8f4315c8a8bc42e9e33db6209201349f91adc4612",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.066821173477762,
+        "quality": {
+          "events": 485,
+          "pointerEvents": 363,
+          "validStrokes": 18,
+          "textEvents": 104
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-14.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "535b806aea050e3640f16cdb487c59b262a46fee19bf0d80573fdf04db66e5a1",
+        "modelInputSha256": "792b769b0da27ed32b524e72a09c5f270ea44380a074c15f58b850e6c21043c2",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.04115104276718,
+        "quality": {
+          "events": 472,
+          "pointerEvents": 354,
+          "validStrokes": 18,
+          "textEvents": 100
+        }
+      },
+      {
+        "path": "speed-matched/slow-dictation-mimic-15.jsonl",
+        "label": "mimic",
+        "style": "slow-dictation",
+        "recordingSha256": "a930ceeab5f24dc8deb7972ce8aee9bdda099ed4393cdcacd9ebadf0449d4bda",
+        "modelInputSha256": "64fba6758674fc6d6e2e0a4850f2ae1aeb9dbc6d6300f912067c585c304c9ff9",
+        "decision": "reject",
+        "reason": "outside_frozen_threshold",
+        "score": 4.063072820291787,
+        "quality": {
+          "events": 432,
+          "pointerEvents": 310,
+          "validStrokes": 18,
+          "textEvents": 104
+        }
+      }
+    ],
+    "audit": [
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-0.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030689,
+        "clockScale": 0.8794950042235669,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 5.856426454897701e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-1.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030688,
+        "clockScale": 0.8495861797112748,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 4.9404924595819466e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-2.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030687,
+        "clockScale": 0.8590973720459462,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.6922908347160046e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-3.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030684,
+        "clockScale": 0.8866961343386577,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 7.13318293321663e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-4.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030686,
+        "clockScale": 0.8973658828077965,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 5.329070518200751e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-5.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.8668362498768915,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 8.43769498715119e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-6.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.8387656259635565,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 7.216449660063518e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-7.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.8330560704377568,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.3211653993039363e-14
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-8.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030688,
+        "clockScale": 0.8182985362782046,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.3156142841808105e-14
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-9.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030687,
+        "clockScale": 0.8640939277114063,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.6986412276764895e-14
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-10.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.819841950811495,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 7.41073868937292e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-11.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030686,
+        "clockScale": 0.9178726720443959,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 5.162537064506978e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-12.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.8145481182855799,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 7.105427357601002e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-13.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030687,
+        "clockScale": 0.861129448524528,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 6.161737786669619e-15
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-14.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030685,
+        "clockScale": 0.9021684084889556,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.8033131371785203e-14
+      },
+      {
+        "style": "mouse-keyboard",
+        "path": "speed-matched/mouse-keyboard-mimic-15.jsonl",
+        "targetScreenUnitsPerSecond": 0.5670936101030686,
+        "actualScreenUnitsPerSecond": 0.5670936101030687,
+        "clockScale": 0.8509003249104646,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.7977620220553945e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-0.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302792,
+        "clockScale": 0.9251744392284743,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 4.9960036108132044e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-1.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302792,
+        "clockScale": 0.8589124645338201,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.0047518372857667e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-2.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302795,
+        "clockScale": 0.9068427567754713,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 8.548717289613705e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-3.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.1877667912330279,
+        "clockScale": 0.8845891671603553,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 3.1530333899354446e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-4.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302795,
+        "clockScale": 0.9155478009924642,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.27675647831893e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-5.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.187766791233028,
+        "clockScale": 0.8598479307353873,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 9.43689570931383e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-6.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302806,
+        "clockScale": 0.9193653753822038,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.3988810110276972e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-7.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302786,
+        "clockScale": 0.8696354935974042,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 6.827871601444713e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-8.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302795,
+        "clockScale": 0.9511257943058864,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.976785484776201e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-9.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.1877667912330279,
+        "clockScale": 0.8813703946109845,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.886579864025407e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-10.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302792,
+        "clockScale": 0.9092331536033621,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.637578961322106e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-11.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302786,
+        "clockScale": 0.8923345765643244,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.9012569296705806e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-12.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302795,
+        "clockScale": 0.9069667751294225,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.5210055437364645e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-13.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302797,
+        "clockScale": 0.8851406794832752,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 4.107825191113079e-15
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-14.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.18776679123302792,
+        "clockScale": 0.8712880434145144,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 2.2037927038809357e-14
+      },
+      {
+        "style": "slow-dictation",
+        "path": "speed-matched/slow-dictation-mimic-15.jsonl",
+        "targetScreenUnitsPerSecond": 0.18776679123302792,
+        "actualScreenUnitsPerSecond": 0.1877667912330279,
+        "clockScale": 0.8951106603666251,
+        "sourcePreserved": true,
+        "maxFeatureDifference": 1.4654943925052066e-14
+      }
+    ]
+  },
+  "swaps": {
+    "alphaOwnerWithBetaProfile": {
+      "attempts": 64,
+      "opens": 0,
+      "rejects": 64,
+      "abstains": 0,
+      "pass": true,
+      "rows": [
+        {
+          "path": "test/alpha/mouse-keyboard-owner-0.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "eba5b204656593bf90399457019141c910dea55d09e2e1ff28cac9cb10a3220d",
+          "modelInputSha256": "c20d4956af060d4303187e20cb4729621219f87683c83242893864b37aa98760",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.049683084971039,
+          "quality": {
+            "events": 438,
+            "pointerEvents": 330,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-1.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "6ead0bfbfcb8af08333ec8df1aa742d90e28c0d5e005aec288227763cf96f2c9",
+          "modelInputSha256": "e657daab1fb5be08830e14d5ccd6373d586ad401841b765da0ff790056549435",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.05029199708834,
+          "quality": {
+            "events": 444,
+            "pointerEvents": 334,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-2.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c361c5cec519e3cbf273cbc4a7120e6c4227e071037cbae3cf1b2616d412f5ae",
+          "modelInputSha256": "c024d129d728fdeebe16992afbf4dc93386dbf4a4a4a54056552dc3fc09f5fec",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.015020051171469,
+          "quality": {
+            "events": 446,
+            "pointerEvents": 328,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-3.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "a97e8ec2d92838e362259ffedc51949a841941c802764087711152b6ac21e43b",
+          "modelInputSha256": "898e64ecad0609f2a3abb1916bf627e37e547f5dbe9f85b2c7b24106c13690b9",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.068299754128778,
+          "quality": {
+            "events": 433,
+            "pointerEvents": 307,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-4.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "b0a60c6d8c5362411143da7fea34660bbc00d125263380f10a1d9dc25d095c78",
+          "modelInputSha256": "501a1a10acf9574323ef0415c72894eaf5bb36887eba1d5a40ad2e9cb58b62d8",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.114111160560946,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 333,
+            "validStrokes": 18,
+            "textEvents": 102
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-5.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "6eebe4c67b807b486500a065397c9b431fc158f23c646505ff59a7db50fdee71",
+          "modelInputSha256": "a1e809ee97c493e2c80420f6134d244f62b6ebb994f210d96f7c05c69a3b77a7",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.97743615044955,
+          "quality": {
+            "events": 446,
+            "pointerEvents": 338,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-6.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "4db6e84e4ec9f3f334c10b6efbc5b2c4e0ee5905538a08fb708d1f175e0fc0a8",
+          "modelInputSha256": "b1fcc5f30c25a49831f2d7e8e7229e048e86128e573879c3a211ad34debced17",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.994033043078287,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 347,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-7.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "a0175e9139bd0b13786954b46a285d0e53e90b1e34a564e8f29f70a5e75b079a",
+          "modelInputSha256": "fe670ceb29ae692fe7c1c9de2fe5abab506e16192ead6b258ee36783b8e46e0f",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.070693595731127,
+          "quality": {
+            "events": 461,
+            "pointerEvents": 341,
+            "validStrokes": 18,
+            "textEvents": 102
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-8.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "4d72f7eefeb7c4ce1f1db0900fc219c7c0d88e471169ba5f892ab59886880a95",
+          "modelInputSha256": "2bea632d1de4acfd0d79c879432ce3064dfdf19a4a4967eae67b679dcf7ef959",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.056862774645912,
+          "quality": {
+            "events": 485,
+            "pointerEvents": 367,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-9.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "6d7a53388927e4c830568f8f90021a0ccd54c36524c0f563fd6a5f5afd57fa28",
+          "modelInputSha256": "2ddb8c43753f76b078f6bc144cba86512ca290ac7b052d874c7832d8416666f4",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.011576323387801,
+          "quality": {
+            "events": 456,
+            "pointerEvents": 350,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-10.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "2ec5bbe2ba9f194ab25a4f371dd78eb0a44d6c69d43e9c465ef171d67648dc5e",
+          "modelInputSha256": "270d32a39a3fefb178dce7836735db556214b50fdb6799752ec4638fa593714b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.118189847075608,
+          "quality": {
+            "events": 460,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-11.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "49c5964cbb9352f8cf2942529372401ccb75993d673d74fcc3197953fa3aec52",
+          "modelInputSha256": "1d3139b9a67db7b62a96eee246b1206258a828f24db2105030ac8910079da0e1",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.064929951046214,
+          "quality": {
+            "events": 449,
+            "pointerEvents": 337,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-12.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "a419bd996939603482a5cd87077060aa1d8d5838e56b4c61903f440e3719ec4c",
+          "modelInputSha256": "43cd3277df134997e50bf3340a6dd8c624001a48c3073dfb6f1ca74fc15286a7",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.061965816333305,
+          "quality": {
+            "events": 418,
+            "pointerEvents": 304,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-13.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "78f3d805d7ac18c7653fec44e688e62f1030e28905c9f060a2cbbd1642d74ea9",
+          "modelInputSha256": "e44d48f80b6a14e5df41bfb26abe43ef09e236670859974a3d41a82a2b39d345",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0761588424917,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 327,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-14.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "5295dfd5d27503cd568bba430e7c4ea5149c7c1fd6428a3afd7033e22ec5a91d",
+          "modelInputSha256": "b026c2b52570c14beba5ead67ab4a931096da0a78af996d220b005caa0894690",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.054816097201711,
+          "quality": {
+            "events": 466,
+            "pointerEvents": 354,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-owner-15.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "a3f67d0fa9bd7880fee6be289d82c3514270e0dfceda1d586cfb43fe8641aa62",
+          "modelInputSha256": "90f2fb7fb3f477fcf5e50b46ce4b2678f2f3044364503da9236b44ff184f0fa3",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.064354644783111,
+          "quality": {
+            "events": 460,
+            "pointerEvents": 344,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-0.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "faad49356e87223407ff61b73c2445ee320acedd17fc885dd7603b1ed78958b1",
+          "modelInputSha256": "e2c403f79e8446f8e6dccbe2674b80477a14ff5151c844ff4072cd76570d0fe5",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.054599601555416,
+          "quality": {
+            "events": 473,
+            "pointerEvents": 353,
+            "validStrokes": 18,
+            "textEvents": 102
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-1.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "04286ff870e53ecb163eba2dc4d3d1de83babc1350a1478b23ea56b70e49d637",
+          "modelInputSha256": "b0fa3a98644e0c67837dcc18d3bf8a3632e95645945c6608978dd68f1af1b713",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.059908164969448,
+          "quality": {
+            "events": 456,
+            "pointerEvents": 332,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-2.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "fa52e28e6ce0e7c62090a2f6d25d60c0f4073a13569d3d288bc9d3659e4a26ec",
+          "modelInputSha256": "3f208731163d39a02105ef270d2e91fae54ae0993cc3cd9fb6e6c8993ecc4623",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.060546367695449,
+          "quality": {
+            "events": 448,
+            "pointerEvents": 326,
+            "validStrokes": 18,
+            "textEvents": 104
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-3.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "036b63e514f0919c922a8784e20e67c86bd1bc106ca2d3866fd9a34d7a6245db",
+          "modelInputSha256": "d9ee7c90288e2c2bccc3ac208ec80276879dda316a1ce21c2fc993b0e3fa7870",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.008834268842059,
+          "quality": {
+            "events": 424,
+            "pointerEvents": 314,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-4.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "e76184897511e3376d4a677031511dd802a5e22a54a853dd13112d2745f6e67c",
+          "modelInputSha256": "cdd711003fb4e2be4442f1a5f02eaea8e6ae3ed6c8fa14078b1701bc2544663a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.041604476360062,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 324,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-5.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "7a9766a60d85b1b7935ccef2c500c347b88aa4a9dfcfd1ee1767d28d6d292a49",
+          "modelInputSha256": "80aa01a04082aadc9118ced9d749b13637d105a1b676744f7149e0597fb2a9de",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.068838696329933,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 334,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-6.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "ad4cbe0f3e073f3b4e19f97cc3d51cdc37471af545170ad798808d87b3d183c7",
+          "modelInputSha256": "f4d5b8d11cc5683e4628f9ab51666b9c83ef3c46b3dd3e10f43d7b42e5892503",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.051121082709225,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 316,
+            "validStrokes": 18,
+            "textEvents": 102
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-7.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "4b1001c4290d808ed4da49f920c66677b49ecc7717754a9131e307792bf1ac98",
+          "modelInputSha256": "3cb946ac16b2133f6e297e08b400124023abea287680c8933ac622c1f1ae3e4a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.1521650431515855,
+          "quality": {
+            "events": 458,
+            "pointerEvents": 338,
+            "validStrokes": 18,
+            "textEvents": 102
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-8.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c3564f2104413f4da9b41df30ad76a30dcfdd842dbd4cfe0f1016f638dea66c6",
+          "modelInputSha256": "c40bfd20095b048c9f22e7c097203de8c82e29c593a64cc85a71e262417f4e22",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.114047379717314,
+          "quality": {
+            "events": 455,
+            "pointerEvents": 331,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-9.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "4dea8de3ab2539a33f00b3d75f5db9c0ec6777831ab18772ee0ce053db674fdf",
+          "modelInputSha256": "9600f2348d0535737a9167519867c222ff89e6e80e199f85f5f4d9a796d4ee86",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.13518487670218,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 314,
+            "validStrokes": 18,
+            "textEvents": 104
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-10.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "b6121f585a53f0b7e2081c5799f0e6fd664b20e0817e51377eeeb5c410626053",
+          "modelInputSha256": "f472be894ee7001c47dee9c6827e35e6255a218e677a1612e77a92a8dd871d6c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.194681202814086,
+          "quality": {
+            "events": 479,
+            "pointerEvents": 347,
+            "validStrokes": 18,
+            "textEvents": 114
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-11.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "229930db412ee94b2eaf5ee395937f23ca40b94c3861255e367b8d060b61664e",
+          "modelInputSha256": "c6a9a8542298fd1f2ac19dd27673e7a6264abb80571485b861f05d41a8397c76",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.090183679847933,
+          "quality": {
+            "events": 481,
+            "pointerEvents": 365,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-12.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "888694f040d0dee9871803a2b383a871882f906a3147578ec6e5ec807c147b6b",
+          "modelInputSha256": "5765877f40cc19af3dc9f3e94563fd62c82d599a18256544ad7bed37cd0574fc",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0836936177175955,
+          "quality": {
+            "events": 451,
+            "pointerEvents": 325,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-13.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "2ce7b6aea76cebedbe683c6846e7930caacf704b8323f50b62a97c2009f13342",
+          "modelInputSha256": "c800dcf0d31e0831cc97e43218ce53d6d4dfb6dffa5ac8a500bb92f2f586a4af",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.096420100919602,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 329,
+            "validStrokes": 18,
+            "textEvents": 110
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-14.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "d649e0848d252a5fd5891279c0490418d348021004dd7e623dcb7af01e948042",
+          "modelInputSha256": "084d1ccbb3d8435bfb8cf61e8372e344c9149ff82e3b249bed9b741a05362772",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.072738599101095,
+          "quality": {
+            "events": 450,
+            "pointerEvents": 332,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/mouse-keyboard-tired-owner-15.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "7f0ed8a0c53e8cb37a5ea046102805fc177b70286231f218e2f422d8ef427ac6",
+          "modelInputSha256": "2dbc7a5635512bd6bfcd286de18eff2b3f0956ab6b846dde8302fc26faf50eca",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0789854635216924,
+          "quality": {
+            "events": 461,
+            "pointerEvents": 337,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-0.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "72b0dc78d5a6d6ab47a91dd83fffc62dfd91653de9bd727a98006a1ffbcfbfb0",
+          "modelInputSha256": "c12da759ebf6ec41d2b78bdb26bc00526dfb83c921a995a6920e90271398802f",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.062617738513445,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 337,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-1.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "39a7f401dd4baef80ed7d4c0f35c520a5825ce230f3958b3307997255e8b66f7",
+          "modelInputSha256": "66f3b48c11a1addc0aabfa282b10fec5a6097f313e7480478155a1b2f3b7a82c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.026413754380179,
+          "quality": {
+            "events": 474,
+            "pointerEvents": 356,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-2.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "b431b617003684f3ab46d5db6ef657fa45b6b75a15919c351867cbc175c137d2",
+          "modelInputSha256": "f5d343cb8765acf13dcf6e4edc947cf6ffc9d204abffad3b56acee7c0b3b0404",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.009001914691202,
+          "quality": {
+            "events": 414,
+            "pointerEvents": 300,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-3.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "399f0d2a92c55b23b40ff72fc125bd0376eefceee412993e8c934f98917674d7",
+          "modelInputSha256": "be3106c2e3d874f10b23a0794025663afcc9a0c487e68d99a844bd0293032d89",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.980394365894587,
+          "quality": {
+            "events": 426,
+            "pointerEvents": 316,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-4.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "04de16e854910b0fa75f9fceefdd0ecfbd025d014c71c5da758b6a1e571e8eb3",
+          "modelInputSha256": "cd7e381d594187a8374086c608739804faa9cf5057ae5cec7627cfa0b22b200d",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.085902834297766,
+          "quality": {
+            "events": 448,
+            "pointerEvents": 322,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-5.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "06560c7d0260f04bd613caf63b3716b4462871e189bf194750c038f1d23c5805",
+          "modelInputSha256": "b1f26dec5d3992fdd80ef7245ab8e0aa4ed295d7c610381f4ac3b5817311f561",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.105650263850032,
+          "quality": {
+            "events": 444,
+            "pointerEvents": 320,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-6.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "6727a094633458b81c34bc09c37baab531f6ce61eae0a28c43b099c1450a2630",
+          "modelInputSha256": "09c4c67e758a73b924f51a251942081ee115de33ab6294a7fcfd4746e0290f25",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.060559615618345,
+          "quality": {
+            "events": 442,
+            "pointerEvents": 342,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-7.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "c06702ecd645ae7daac095397b99293b1414c4cc555ad116d05dda6f6290a18a",
+          "modelInputSha256": "c5b526fad500bd29f30f4cda871d00d8bc551d8eba674e68ff90eb30c2ae3caf",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.057541521142916,
+          "quality": {
+            "events": 445,
+            "pointerEvents": 335,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-8.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "0300dbf42a1b0072f4fc8d2936dba9fdaffff2b4cc8af2ea346636a2d8fb5ded",
+          "modelInputSha256": "c3043dea065f80b98bb2257c67eef62add2912d82d5ec5f6480898e814bbb912",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.983038266594755,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 339,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-9.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "c068c627e56c3eafdf387b5c4427644a6af3ce4d9819b7106b0a1f958b355035",
+          "modelInputSha256": "e86aec23fefe8e2fac7bfef2eae14a29fcf7f54dc248c8ef755cf6ce2a6f7979",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.980902587485837,
+          "quality": {
+            "events": 432,
+            "pointerEvents": 324,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-10.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "3d04a921eefac801616051d1f4992f2e3aa9779ef868cf970c65adf8ab9ad8bc",
+          "modelInputSha256": "a6f8343cdfb6737adccf7706847d41de300a87d383df9cc7b9279c9899476a13",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.064228832645568,
+          "quality": {
+            "events": 418,
+            "pointerEvents": 312,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-11.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "fdf2b468b033153237adf043bce1312d8b8450817bbfb00823a85e6bdc64c90a",
+          "modelInputSha256": "aaae5866e192d54f8c811cf4639ef61ad998de8eca17c6c2373eecd9916c3a3a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.987010193583741,
+          "quality": {
+            "events": 419,
+            "pointerEvents": 315,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-12.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "177028cb91c138c6b498eeef76b8058bb5f64c1d0a7da2d289316ed2a71155aa",
+          "modelInputSha256": "aa2adafc217c8c4cba43c8ce883670d743424efc1f65a020ba7bd50e9d9023b6",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.047612714803704,
+          "quality": {
+            "events": 432,
+            "pointerEvents": 326,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-13.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "447a1fbc5458b4bf88e35b8930a6fe1a86747d64e08e21d59c226491bb1dc738",
+          "modelInputSha256": "c07fc711d460c35f52133f413989cf32d1178f0fdb26024469f2ca4c5f822d0d",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.944260397411359,
+          "quality": {
+            "events": 435,
+            "pointerEvents": 321,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-14.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "8a149483302d708e33b0a6a5177f263d28088a75908473106a59338fc780986c",
+          "modelInputSha256": "33a8e53dd383b9e6e5a58574d7f67109033011ab7e936af9b86aec54455c99d1",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.988723557036633,
+          "quality": {
+            "events": 464,
+            "pointerEvents": 348,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-owner-15.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "6df635d6d0a8d27e94ead84b0a0b8f0f3e6377d111e5fab7d0c20ecca74c92be",
+          "modelInputSha256": "264fb55b52bc451d9d92d4be3cabd5985cce8884e211ba23e6abe239151ba576",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.034912877558296,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 310,
+            "validStrokes": 18,
+            "textEvents": 112
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-0.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "42bcb1f12468193daf524971efc118301bfc37ae134e4442ae8587fa2fbd6766",
+          "modelInputSha256": "732537e3a0d5736bd9e5a0430e4ec676dcb2d83e1e7fb33836da4d5272772c0d",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.081256218362833,
+          "quality": {
+            "events": 465,
+            "pointerEvents": 349,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-1.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "f3a89506b628d2ac246a661a79c4fb6ec8c9704e174acbe4f2c911b8ed2b0a51",
+          "modelInputSha256": "e64e018f7ca7f3968e9bf8678242645e188bf16d95240f5d8853d75cd8eb5645",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.00818437830371,
+          "quality": {
+            "events": 466,
+            "pointerEvents": 342,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-2.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "946c38e18c80daf83da5302fe7337276b3e9d7287a0d738beaa9c9366783a36c",
+          "modelInputSha256": "de575477ac2f2a20a25f500f7f5972d6e83496371c187a9f030c8e833c383b74",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.076989708859922,
+          "quality": {
+            "events": 474,
+            "pointerEvents": 356,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-3.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "2cb7bb9a31c8994b0750eacd5b6e1c90392ae9ecc58c1659ebda87c08defa06d",
+          "modelInputSha256": "e27b54dfea0fc3dd2eb6551d9e58ea2739e11bd0f684815881b92c84391636e4",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.019026634240575,
+          "quality": {
+            "events": 441,
+            "pointerEvents": 327,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-4.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "926a3c4598c3475cd01e77fdeadac77747590cb4698b3344eab3a37bd11de1ea",
+          "modelInputSha256": "6dc7e8382eabc232a42a07731e44b018ff0d2b15a625fc36883516cdb85f562d",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.005590104479501,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 316,
+            "validStrokes": 18,
+            "textEvents": 106
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-5.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "1c030fbdc1d3e6ee6aeb61004b450d56ed6ae7f41b90e950738966ddb0946cdf",
+          "modelInputSha256": "48497b67a34fee620a53af9c91e3b83a3628b3e6757b9d16b377495f837183ac",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.043434472778262,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 337,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-6.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "55284c7bcc7beb2c82ea411eda7e60658da0068b4639b105fb9e798dd7875fac",
+          "modelInputSha256": "2adb76d9b66a6d5444cd2663d5ba77056c9fa79b7e17ae48d29a921989852a7e",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.088725212443927,
+          "quality": {
+            "events": 470,
+            "pointerEvents": 342,
+            "validStrokes": 18,
+            "textEvents": 110
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-7.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "bccdeeb5c6862ad83a85facba846113650ad80f6128a2203bdb49abf17f5bdc7",
+          "modelInputSha256": "fc4d6eb1a9d332e42c518257ac48ba50ef8219f263ba1f499771cb58b59cad8d",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.977639334133341,
+          "quality": {
+            "events": 475,
+            "pointerEvents": 357,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-8.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "6a7f183ae4fe05857a76e3864c1120b7a4339d80e97f62a6333d3cea464948a7",
+          "modelInputSha256": "2e0cd42f71003cf20a515b4d6457789009fdc35be594cc43819323ed368ab1e8",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.981089065630415,
+          "quality": {
+            "events": 471,
+            "pointerEvents": 353,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-9.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "406d3e658144a80af244c72fea08f6959b6bd6bac24728df2f187f4bf51453ac",
+          "modelInputSha256": "d290b5d4103d6d15c4ee8c340fdbba26ee5e3b9cf6b7494ab29154bf3196389e",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.078873807282544,
+          "quality": {
+            "events": 453,
+            "pointerEvents": 327,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-10.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "58eb9500906c2c758489d45c0c031006bbc0c5bd0a2b221941ac2e5892877f78",
+          "modelInputSha256": "650193522e1aa9eb6eb3ac2600bfc46bbbc8c414fb26a091b98552f04453f62b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.022934048320307,
+          "quality": {
+            "events": 432,
+            "pointerEvents": 322,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-11.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "91af83c79f4fb57bd6e258c27961ffd4c98d38f2066156aa0c7e8f1fa42049bb",
+          "modelInputSha256": "48cbb1c39a523c6dadc5571e4ebac03744d7917e7fe49bbe832f9cbf1b4dc048",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.084471442569313,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 335,
+            "validStrokes": 18,
+            "textEvents": 104
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-12.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "9bb7cfc0206cd9cc4b67604950087330b87a4c6436b9883b7c2a5bcdb3a3a186",
+          "modelInputSha256": "69fbfc1b65707a44aff059623f480769b2c8231ba2d6e64c12aeacd0fd89206a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0160577556264005,
+          "quality": {
+            "events": 430,
+            "pointerEvents": 314,
+            "validStrokes": 18,
+            "textEvents": 98
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-13.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "8b9003a2292dc3d69fce9ed9e725df7b78ed4f420d05f6b2160bf4a54b4e8eb3",
+          "modelInputSha256": "19e57b0c3137aa09ff48c1952e6cce7efcba820327463f36fa56571351a3c196",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.075607303275124,
+          "quality": {
+            "events": 451,
+            "pointerEvents": 315,
+            "validStrokes": 18,
+            "textEvents": 118
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-14.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "a03cedd525d4887bba25ddb516d8553d50d5f4e4714d1d348b43a9efa4d95daf",
+          "modelInputSha256": "f932d0653af8666acffeb3abb73d5ee2bc3e57f1951ed2a435174c21f0bea01e",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.052866684853447,
+          "quality": {
+            "events": 446,
+            "pointerEvents": 334,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/alpha/slow-dictation-tired-owner-15.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "fabcda729816bb2287aaa6b353669246fa87f88ae89b793df43df2ab51cb1e8a",
+          "modelInputSha256": "f757371c52b808c81da7715682360ea9b80a082f395edb53675354ddc41dc2f3",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.064900393118417,
+          "quality": {
+            "events": 466,
+            "pointerEvents": 340,
+            "validStrokes": 18,
+            "textEvents": 108
+          }
+        }
+      ],
+      "profileSha256": "5a373dbf5329e66ba6d0c71909a01e151a8bc6f1309f317f1e0fb9a263f59e2e"
+    },
+    "betaOwnerWithAlphaProfile": {
+      "attempts": 64,
+      "opens": 0,
+      "rejects": 64,
+      "abstains": 0,
+      "pass": true,
+      "rows": [
+        {
+          "path": "test/beta/mouse-keyboard-owner-0.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "07c6b01788b18de403d9fdb7fee92fb44651cb92fd780af17ec563e1fc68df1b",
+          "modelInputSha256": "e319cc1b2d1a48e1f311f0c0a83b3f9efcd3ceb918982912a6d8b0f549c38414",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.97405322215623,
+          "quality": {
+            "events": 422,
+            "pointerEvents": 322,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-1.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "0168fa0f2d998b21a9606b65406dbae4c03aa8646a4a1030feb1ca822fb54394",
+          "modelInputSha256": "d5794b07e995a0d3b3ba67417ea4effb1e1773ad371b1691b80b614da0db13ad",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.012824052677381,
+          "quality": {
+            "events": 451,
+            "pointerEvents": 347,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-2.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c4b7f097d33b0be186fb73e5d73d65eb586adeac0d0572a92f57abbefe4c9e4e",
+          "modelInputSha256": "bb014807863721568c398c0bd88748e2aa8c8fcbad22c96f1a5a216b5198022a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.057883953271918,
+          "quality": {
+            "events": 402,
+            "pointerEvents": 302,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-3.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "00d8d368348caf2fc6def227a5b21893946545738dc11bc5c283b50f807c4daf",
+          "modelInputSha256": "dd013f0c75ae48626385744ebbc8193c371773aa8b4cd5e120477ec305c0900a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.997023019370391,
+          "quality": {
+            "events": 441,
+            "pointerEvents": 343,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-4.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "85d3274f09391bc876793a8f02d066df13454ac748d1cb63c9eb2b6b42e046da",
+          "modelInputSha256": "446451a453d6e62536d7b48f3d79c295468b4976e30b3aa8a38cc63e58ead861",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0478315700964425,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 324,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-5.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c0af8bafeea5019a957a106bf5581b09b98d13cecc15d91785c3fd9d4dcbd438",
+          "modelInputSha256": "11d7ad2d87d2b559f63568a37b802dcd9d8438ca7a81951b1c7b4f940c9e6eec",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.017525170363031,
+          "quality": {
+            "events": 414,
+            "pointerEvents": 316,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-6.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "561a0207f5071b0a7b76c69cdef9f13269327d7c7f74d19307f00b490ae516ab",
+          "modelInputSha256": "383e3335034203caba758cb35f81e6a66258edb3862e9da1dece82841b935ac9",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.05451374480457,
+          "quality": {
+            "events": 442,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-7.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "4b631aaace98881e90ea6b903256b3612baa3daefca4ead50b7aa0a9562ae7bc",
+          "modelInputSha256": "3b488b9dbe22d1cc8087369e5be466de6741559bc68d56057c3654132b8a70b4",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.058475763285651,
+          "quality": {
+            "events": 413,
+            "pointerEvents": 315,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-8.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "687feef06bc21599e988986723b158919ae5ca1ed643866ee7089bb76294043c",
+          "modelInputSha256": "2b9d7f4856e28781e41edb399458b8d16778b9be65b3f3fc588335fbbf066e31",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.015277461959765,
+          "quality": {
+            "events": 454,
+            "pointerEvents": 350,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-9.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c147f9129488a1e54cf8df547ae722617fe7b59f2f61a47795d8157b282e74b1",
+          "modelInputSha256": "676ce28d96fa57791c5895541e1b896eaadb371ea573794f3daa644143b1721b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.035261903721189,
+          "quality": {
+            "events": 434,
+            "pointerEvents": 338,
+            "validStrokes": 18,
+            "textEvents": 78
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-10.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c203892521c509239f22d3b8a8ba88b23c787b4964d7b22693138c955f329a51",
+          "modelInputSha256": "3d2833952356c839e918240421cc588f69607c6c808e84298a6554912fb96017",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.98437511462519,
+          "quality": {
+            "events": 441,
+            "pointerEvents": 341,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-11.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "0fb021026c1e0663b8656b0278cd1c87ff9ff5e8884929c3b3a1f925d26cfee3",
+          "modelInputSha256": "c712e3ae2516047d133204b8a78b4eb98cd1dbf2a1085c1dd62c886963837da6",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0481017787446065,
+          "quality": {
+            "events": 435,
+            "pointerEvents": 337,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-12.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "316e7c0ce9e432edbcdfcf0a471c1203a4014d2d7def1045466c40d80150b529",
+          "modelInputSha256": "2df6cf9f6f09186e6acaa033b06dcad0b319ad3c89a26745659cdee4d481561b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0362029684161085,
+          "quality": {
+            "events": 431,
+            "pointerEvents": 333,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-13.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "c17ba9ae00f72bc2f57b4b872db8f7082e88447c9860122efe67dc4c173c8d56",
+          "modelInputSha256": "cf2a5148c0c4e82e6d4acd2191b64a46e93ce9e5582852902d4fb20a7886e58f",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0420813480355,
+          "quality": {
+            "events": 437,
+            "pointerEvents": 335,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-14.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "5d97662a3e39d6685af60e69b2ad8c0eaefacb1945e06150ac5fe6c38e21610e",
+          "modelInputSha256": "34fc515aeb129a4ab365bc93cc9edd3849e7b0daae3b7732dd578045d748e513",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.061128347776041,
+          "quality": {
+            "events": 460,
+            "pointerEvents": 356,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-owner-15.jsonl",
+          "label": "owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "ca7ca2c1968a6ce50f680da88a55daddd2dca77cf09be2deca804632f1765732",
+          "modelInputSha256": "331d7cf98c493b919c2b9dec79910579a241743d4cec1ccdabcc7a895c733c8c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.99454304252407,
+          "quality": {
+            "events": 442,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-0.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "86f92903ab03822e7d1674c7354c73fecf3a320d422d2f35bfdb4f2dc89c45cc",
+          "modelInputSha256": "715c333f16c3ab3c97b04cc8a7f23853f357b3ba912a0b205f45503314539c1c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0479215568582365,
+          "quality": {
+            "events": 466,
+            "pointerEvents": 358,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-1.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "b1e7a6a18c02c059a01e50caecd3dc0a1edc3d3e3044e13a96256e77f2bd8f4d",
+          "modelInputSha256": "688650aed2ce574a79ad4d187d501bed56697a12d517b1cb0d443d8115f1cc7a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.978495901621203,
+          "quality": {
+            "events": 430,
+            "pointerEvents": 318,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-2.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "a06d77b40edce2ea749db6c0420395a3ecc6ad90a58e96f28fc135135202c5d9",
+          "modelInputSha256": "cdf6af526d1954a9080599d54923ed2bfdd48f96719b2f4ac893c6ba8c580141",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.047827370126973,
+          "quality": {
+            "events": 448,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-3.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "e0623afb6da18ef50f43c96835ffa613e90798109dc24d0cc6c1a0c77a916bbb",
+          "modelInputSha256": "4aad2e82f98abffdd2538265ddae39acaa55fcc687f94988b29004a184bd170a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.026647606328852,
+          "quality": {
+            "events": 447,
+            "pointerEvents": 343,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-4.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "931098547fee8892b7ba1e1f99f00935f8a2dc5fc3394a26710c86f17cf494b8",
+          "modelInputSha256": "14ff46ada7253f60e8b4009b772eec37175285b248f535c7ec474a6e196cdf55",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0452214421758725,
+          "quality": {
+            "events": 425,
+            "pointerEvents": 321,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-5.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "2c6b44885398ef8d533af62cf63b141dfa4bbe7af76233161e631f2dc36462ab",
+          "modelInputSha256": "d796657a7aa362f436cc2bf2fe5f0269635a97ae98321152f8bd68d0f6c57ae0",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.006688071061272,
+          "quality": {
+            "events": 417,
+            "pointerEvents": 315,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-6.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "38029ba99db9e9f1d9b1ff7ea078e21f61bfe3d915eea79f03cba0f2d5f22a94",
+          "modelInputSha256": "202bffb2469bb93d42e78b11d754274d11ab257db90028e204cac8171323bf47",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.042840455277344,
+          "quality": {
+            "events": 454,
+            "pointerEvents": 350,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-7.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "1e5f18d8a7a7d1db34dc649954a3722ec67e3961e9a3a5d2d743cd7ab07688be",
+          "modelInputSha256": "3dc41fcc898a87d05cb6d5ed6cba9fa96523a9cc8167901c9caa4d82837d9db7",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0165006894749276,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-8.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "260a59a14179cddc0a806660087ae7adeb6500e9fa16f3b50e105898d39ca53e",
+          "modelInputSha256": "c3b0978cfc2645e5a865ba39f96e3bb61919a8585e6911ef4d2fd66bc8c3163c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.019714536982346,
+          "quality": {
+            "events": 447,
+            "pointerEvents": 341,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-9.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "86aff6b4cc499867b3847ddf355151b8800c78d42dce69ee1a6c2e44d6559876",
+          "modelInputSha256": "5117ae055b5cf641317371c623f7d750e0127b1fccff1807c8141885a3655e20",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0167103510112625,
+          "quality": {
+            "events": 416,
+            "pointerEvents": 310,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-10.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "e74ca11d34825edfda19df9ea503b228e29d913f0ca52e55fd16241ff5324676",
+          "modelInputSha256": "0d06b2ae36cd95be50d26a60d85c53f9cd781125cb45285eb2d03c23f684d4e1",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.007413631210911,
+          "quality": {
+            "events": 423,
+            "pointerEvents": 325,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-11.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "2a1f3124cb9dd9e98f230c88d5fa7bec697f1e8f8fb11fc2a471547dce2668ec",
+          "modelInputSha256": "5b7e529b2ae5cc97768fc86715f3515933e2b2f70a9e071f884f3544d8670ace",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.023095655606239,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 344,
+            "validStrokes": 18,
+            "textEvents": 78
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-12.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "bb7070c7bd8d3846788c6faa81edea6a487d1fb70f5c9b7182f4a855150b01a9",
+          "modelInputSha256": "49044fdf1a2524994d76a0d8832af45ce1c0fa0252f68867393c83949652c680",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.9789607663281075,
+          "quality": {
+            "events": 432,
+            "pointerEvents": 328,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-13.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "103ce7eb367b5a36130f15fcc20d38cbd8e6eb94f1b2794280bbef1d0adb7e2d",
+          "modelInputSha256": "2b5a922d9c28e6fd0860f56e0d1c8e766e8a1448f738778f769ec00a7ce32c64",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.039916445840693,
+          "quality": {
+            "events": 418,
+            "pointerEvents": 318,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-14.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "99228d1c70639f7fdf4d240a4e7eac84ac5c477f7304fa60e0c897905ddf4f32",
+          "modelInputSha256": "1751e4efdcd0dfb62ab56c03c5e65ad6df51980cb8ec1f571409eefb79453860",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.982344720029557,
+          "quality": {
+            "events": 442,
+            "pointerEvents": 330,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/beta/mouse-keyboard-tired-owner-15.jsonl",
+          "label": "tired-owner",
+          "style": "mouse-keyboard",
+          "recordingSha256": "909e73e29da0540cfe96fcc15482ecad038ac4f8b13104086a4761225b248a3a",
+          "modelInputSha256": "870a57a8d5c0b7a7af6b21161e515ff9e6a573f39bce0f0266d9d0ae6ecab723",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.032908959957756,
+          "quality": {
+            "events": 459,
+            "pointerEvents": 353,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-0.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "b7b14ea95d985ca998748e17095f2e5374e48922e32a83127c2e7770aa1a6e15",
+          "modelInputSha256": "6c9ab64e46b27994c7b127f1155e5140cccbf793449eede1f5cf7c9b55240acf",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.009206036339869,
+          "quality": {
+            "events": 427,
+            "pointerEvents": 329,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-1.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "0b341648235f06cb4f1ab0db16e0d53174cc4237efb034c22d5363cc5f8d9716",
+          "modelInputSha256": "3bd7da84870cf40d46dd6c5ccc4d9f66bd595e60879778bf10f490c933960dd8",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.996197751601935,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 351,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-2.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "4c0af0e262890e2743efe538b5e5339363bcd122d044f697067b3aeab2f8ed20",
+          "modelInputSha256": "1d9b828f989db5346c989eb76e9fa4e280c62c1fdbee227a0df1848e9e65866a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.014387294798731,
+          "quality": {
+            "events": 437,
+            "pointerEvents": 327,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-3.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "5b9d7f1c358fe2df88e5e52fb5d6b45978af269ace8adc0359c2884ce95809ab",
+          "modelInputSha256": "92760021cee0df01701af3bbf1e5b56626ef67a97fc23fb445c11acb725a8f68",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0099128066663905,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 336,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-4.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "51c843c090fc7146c186c80dd2f87e6ba855d22f78539fd1b6f3c865e217a762",
+          "modelInputSha256": "4734d2b14e88456144fb495b7752f67b8be39b9f4d5255967ed54b31d4c25706",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.050073670245407,
+          "quality": {
+            "events": 433,
+            "pointerEvents": 333,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-5.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "b67a1989bf65c76dcf35b66a09a9e41f142d4d0ffdcfa0adf848cfc745c7ed40",
+          "modelInputSha256": "8ce861b8f340aef71f679301cd1e20028b908e677b7e8fca3927c7df0cce70d5",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0373438545539075,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 328,
+            "validStrokes": 18,
+            "textEvents": 94
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-6.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "9eebbaa488fdb510f094cf4f236ef3688bd3f6a417ebc46da9f8392048312fd3",
+          "modelInputSha256": "a0d4d9ba7c688f008ef29ef1256817cda2b4b6e4812247a133dcfa121c9a99e9",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.045625008362996,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 334,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-7.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "e72d4d1b0dad00f4eb03acb7c141e4e432662a69eeb560bd73fbd8f5f6d4b5bb",
+          "modelInputSha256": "b72f9f4123fba3709bf13d8096843eaccf2fb457f29f97ff4483d1fe28cd63dc",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.011748760887338,
+          "quality": {
+            "events": 415,
+            "pointerEvents": 317,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-8.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "bf61c07b3dd47cb9eea8f5a324d61fb747156e176a022748420563c8323dccf0",
+          "modelInputSha256": "fcc21d9406fb69d77c68b230e774d79565a2e3654b8bbca0246ddeb42bbc0cde",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.050838278248586,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 355,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-9.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "9aacc00c59aaae2f164dfb5d6ece0786915a69f01e966b7423cf4c21a501d795",
+          "modelInputSha256": "7d302b6e4b2d8fe7aab74f7182ec93c5383bae17dc69f016641b75acaf0ec739",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.017640036108226,
+          "quality": {
+            "events": 419,
+            "pointerEvents": 313,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-10.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "14df14e71052404ea4ba8307d98b05852cc1508cf5fe44c7553216e3b26e03d1",
+          "modelInputSha256": "c89e74bfff4950654801cce4adff29703cc6938133ac83944b45dffdd072a0e2",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.023453373358229,
+          "quality": {
+            "events": 425,
+            "pointerEvents": 329,
+            "validStrokes": 18,
+            "textEvents": 78
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-11.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "1e29c7621f11f29f5a29906bbdde11de91a042f014494aa9dda9542db4262926",
+          "modelInputSha256": "e0513afcdaf6d7d58b3a7d763649d2e0798214b01b2b699365a1b91c1324c32b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0306086589042565,
+          "quality": {
+            "events": 450,
+            "pointerEvents": 348,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-12.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "22e66691b5ad3757f0b5c896688da4fad0b7e8a128fb0b05d8914e8f1cc4351d",
+          "modelInputSha256": "c72912c42723c88ce6ded428b130ed15178a325de118d465696e360542684d49",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.063541832208556,
+          "quality": {
+            "events": 422,
+            "pointerEvents": 314,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-13.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "8502d5d8ebf875b2b8502f9601daa91429b43a30fa83aea4da1793377e0302a1",
+          "modelInputSha256": "00f46c6ae1be24dcc03d4ab69111424ca0ded7209886eb8687e06574effd2efa",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.04611915269657,
+          "quality": {
+            "events": 440,
+            "pointerEvents": 334,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-14.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "e7792c2613132a19d3cd39ef70d0599ffc126243da2c07410c54216cb0cc2501",
+          "modelInputSha256": "e2fc4ae3fa2997118369c8ddbff19ad1aaa20dbf63a9ef2fa44001e60485c665",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0196603371681805,
+          "quality": {
+            "events": 429,
+            "pointerEvents": 327,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-owner-15.jsonl",
+          "label": "owner",
+          "style": "slow-dictation",
+          "recordingSha256": "ff02cd2261feb3344346bccb6236d3211437acad6a80e4b98cac7957cbe24e02",
+          "modelInputSha256": "771e3908209e354bda27dfa65e80f4a33e44aa97e1a24c75797ecd5fa3632cac",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.016797087572569,
+          "quality": {
+            "events": 439,
+            "pointerEvents": 333,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-0.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "11ad2bc126252f201a9fef5d57e27ea2b5b044afea8d79f702dff0a4eb0696ad",
+          "modelInputSha256": "3fa3e2517f2f3f86004b07041f97cbac3f45bf0e6923c5919a1faeffc6a08c9e",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.9820300687740415,
+          "quality": {
+            "events": 422,
+            "pointerEvents": 324,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-1.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "ea00feea03bc855f04a414b7134be7c66808ce2c84ce86c8fe87d383cf3d0d37",
+          "modelInputSha256": "eedd3fa10ef8133d7460657fe3d8267ef8b540b38cb953db9fa0b3b560dbc46c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.976463750010316,
+          "quality": {
+            "events": 428,
+            "pointerEvents": 322,
+            "validStrokes": 18,
+            "textEvents": 88
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-2.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "f3baf635f94f7d7d62986e994ce1fea669885aa84fe1293c6b3126b53ab7c090",
+          "modelInputSha256": "69186d5844fcf4ba96cc5649f267f3148fab87a6a7daa4472a0bfab8f539827b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.978695401069158,
+          "quality": {
+            "events": 428,
+            "pointerEvents": 320,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-3.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "287ed1268a52e1e452ec7ce7fa27a25d4a68b918f5f99d0544917ea09c618bea",
+          "modelInputSha256": "c779c7bfba26ccb3b90b312e9f53d0a79fb9bc483483cd67b4a4312240f07bd8",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.051087828014476,
+          "quality": {
+            "events": 449,
+            "pointerEvents": 351,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-4.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "465b053f557cef665ae3e1a82c67abcab61a15a4e101487ca8cea02e45bd1537",
+          "modelInputSha256": "9d0e703582b0a2bfc1e14832fb5d5addcaa0c9eba20c625e68b315c29771a292",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.022535905758227,
+          "quality": {
+            "events": 437,
+            "pointerEvents": 339,
+            "validStrokes": 18,
+            "textEvents": 80
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-5.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "bc70db8cfee8c6d1b29456069fa01fe9b0735fffd799d9db355a740875ebbada",
+          "modelInputSha256": "f4db4d3f5f7d979df68a806e3fa45b34a7bf0f12f0a77335974ad795fd31ea69",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.000852789630416,
+          "quality": {
+            "events": 431,
+            "pointerEvents": 329,
+            "validStrokes": 18,
+            "textEvents": 84
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-6.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "b81f66e95a9a415760abd70fcda8672b8b24542614b851a965f0f5420bd69a71",
+          "modelInputSha256": "44d390cf846fa73da74d97f554d615bd5ee299cf3ce2b026cb33748f2f11d33a",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.04175941902658,
+          "quality": {
+            "events": 461,
+            "pointerEvents": 351,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-7.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "5dd18c16808588548b72d77381703d44c3ccfbf950d4bc85d7a7fb5e4a2bb988",
+          "modelInputSha256": "f1c697f2bed23b60f75e31be822e2949d583c1c3c3ce68d3175f2e059c2e351b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0014805973816046,
+          "quality": {
+            "events": 447,
+            "pointerEvents": 333,
+            "validStrokes": 18,
+            "textEvents": 96
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-8.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "a90b3471fcad4c447d2174121add22d8bea74d09b1dadbbc0516541874bffa04",
+          "modelInputSha256": "739b492e1b95a142283b1b7e05d40de3a72f5d7ba18c60d26d7f1a5790838ba3",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.0280998052432215,
+          "quality": {
+            "events": 436,
+            "pointerEvents": 326,
+            "validStrokes": 18,
+            "textEvents": 92
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-9.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "be5fb61c822a607310140a281260fe6e8a4fb303fefc621f7e2ac0cc2656a59e",
+          "modelInputSha256": "ca42ccdc674e4b2906476cbea292272a7fd1fed2c7ed5c676812deac8ff565c1",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.989757305461393,
+          "quality": {
+            "events": 428,
+            "pointerEvents": 324,
+            "validStrokes": 18,
+            "textEvents": 86
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-10.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "ae1dc5bb641ef3f3fefb034a05facd26f45abf8fea31d69d4f96075fc14d6aa4",
+          "modelInputSha256": "56f8acb22d4e18a9ee238650251c0584b8a551168752044dc17b1c9748cb52d4",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.999677806774697,
+          "quality": {
+            "events": 431,
+            "pointerEvents": 323,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-11.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "1db372efcc4fa6c7e7cd41e93d995d2bf3c3b09271bbf7166f93fee0657d2904",
+          "modelInputSha256": "27f2c4de627dca443ad40d0923a790ce65e31a6b998fc2ccca56855806b08ad3",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.000014985153809,
+          "quality": {
+            "events": 430,
+            "pointerEvents": 330,
+            "validStrokes": 18,
+            "textEvents": 82
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-12.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "c6f952dadfa905d4addfe4dced8eae35c6667edc943d9d5312c075b6f583a35c",
+          "modelInputSha256": "4817a94c64a93959826d4cf72fd66bdc876a683ebc5254700866444a9e3eb690",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.022845314098504,
+          "quality": {
+            "events": 460,
+            "pointerEvents": 342,
+            "validStrokes": 18,
+            "textEvents": 100
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-13.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "b1a976b633cfeca83d69fce6961dad8e82c6724dccd0189ce22a250d2a6cf24c",
+          "modelInputSha256": "41b43e135b5e3c8b0a82c4ae5ba9c89eef88f2b459f66b1d3a25fac69d040501",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.98779930276809,
+          "quality": {
+            "events": 457,
+            "pointerEvents": 349,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-14.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "ba97a186dfa5d78bc835e0993f140a8e94f9f863495e6145721f5ce2bb3296bc",
+          "modelInputSha256": "df0a786d335896c68ade3a27384ba0ec945edc139d85339483c20854d91af71b",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 6.03988500171947,
+          "quality": {
+            "events": 420,
+            "pointerEvents": 326,
+            "validStrokes": 18,
+            "textEvents": 76
+          }
+        },
+        {
+          "path": "test/beta/slow-dictation-tired-owner-15.jsonl",
+          "label": "tired-owner",
+          "style": "slow-dictation",
+          "recordingSha256": "579a18a925b07cac3b9955ece67ae5aa2c28cf181cab414f5eb7249b237be537",
+          "modelInputSha256": "178e1c2d7c248c579a8557900d49fad8e44e313adcabc0c02a036d8a0cdd370c",
+          "decision": "reject",
+          "reason": "outside_frozen_threshold",
+          "score": 5.980089186274842,
+          "quality": {
+            "events": 459,
+            "pointerEvents": 351,
+            "validStrokes": 18,
+            "textEvents": 90
+          }
+        }
+      ],
+      "profileSha256": "2cc509ebb408f3af7f63e1f351bbff838dc2c4dc2495b689b42e4f10f9f6175a"
+    }
+  },
+  "importantLimits": [
+    "No real human data or accuracy validation.",
+    "A toy mimic copies easy first moments but not the full motor trajectory.",
+    "Recorded-event replay or an attacker who learns the complete feature distribution can bypass this offline classifier.",
+    "Insufficient coverage abstains and counts as owner rejection.",
+    "No claim that disabled users, eye gaze, switches or real dictation are validated by these fake styles."
+  ]
+}
