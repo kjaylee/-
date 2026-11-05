@@ -1,0 +1,21 @@
+--- a/dist/chunk-6C63PTFL.js
++++ b/dist/chunk-6C63PTFL.js
+@@ -343,7 +343,9 @@
+   return { claimId: data.claimId, idempotencyKey };
+ }
+ async function authorizeUploads(ctx, ref) {
+-  return { signature: await ctx.signer.signMessage(buildSubmitMessage(ref.taskId)) };
++  const expiresAt = Math.floor(Date.now() / 1000) + 300;
++  const message = `taskmarket:market:submit:${ref.taskId}:upload:${expiresAt}`;
++  return { signature: await ctx.signer.signMessage(message), expiresAt };
+ }
+ async function readArtifactFile(file) {
+   const fileName = file.fileName ?? basename(file.path);
+@@ -373,6 +375,7 @@
+         taskId: ref.taskId,
+         workerAddress: ctx.signer.address,
+         signature: authorization.signature,
++        expiresAt: authorization.expiresAt,
+         fileName: artifact.fileName,
+         mimeType: artifact.mimeType,
+         role: artifact.role,
